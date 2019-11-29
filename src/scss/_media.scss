@@ -259,8 +259,8 @@
       border-radius: 5px 0 0 5px;
       box-shadow: 0px 0px 20px rgba(85, 110, 176, 0.15);
       transform-origin: right;
-      transform: translateX(150%);
-      transition: all .5s;
+      transform: translateX(150%) scaleX(0);
+      transition: all 1s;
       .rightside{
         display: block;
       }
@@ -275,7 +275,7 @@
 
     .cases__nav.cases__nav--open,
     .technologies__nav.technologies__nav--open {
-      transform: translateX(0);
+      transform: translateX(0) scaleX(1);
     }
   }
 
