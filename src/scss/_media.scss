@@ -70,6 +70,10 @@
     padding: 0 30px;
   }
 
+  .competentions__container{
+    padding-bottom: 30px;
+  }
+
   .clients__container,
   .science-section__title,
   .wedo__title,
@@ -86,11 +90,11 @@
   .science-section__text,
   .wedo__title {
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding-top: 50px;
   }
 
   .priorities__container {
-    padding-top: 170px;
+    padding-top: 100px;
   }
 
   .wedo__tags {
@@ -104,7 +108,7 @@
   }
 
   .competentions__container {
-    padding-top: 150px;
+    padding-top: 120px;
     max-width: 575px;
   }
 
@@ -113,7 +117,7 @@
   }
 
   .social__container {
-    padding-top: 156px;
+    padding-top: 100px;
     max-width: 575px;
   }
 
@@ -483,11 +487,14 @@
     }
   }
 
-  .team__inner{
+  .team__positioner{
     display: none;
   }
+  
   .team__title{
     padding-top: 100px;
+    position: static;
+    transform: none;
   }
   .team__inner-mobile{
     display: flex;
@@ -518,7 +525,6 @@
 
   .numeric__wrapper {
     flex-direction: column;
-    height: 100%;
     padding-top: 130px;
     padding-bottom: 10px;
 
@@ -557,22 +563,6 @@
       height: 100%;
     }
   }
-}
-
-@media (max-width: 900px) {
-  .blog__post-wrapper .blog__post-content {
-    .post-content__image-wrapper img {
-      height: 100%;
-    }
-
-    .post-content__quote {
-      padding-right: 150px;
-    }
-  }
-
-  .tabs__inner .cases__nav {
-    top: 180px;
-  }
 
   .header.header-black .header__wrapper {
     padding: 0;
@@ -587,6 +577,7 @@
   .header__wrapper {
     position: relative;
     margin: 0 20px;
+    justify-content: space-between;
 
     .burger__menu,
     .burger__menu-black {
@@ -694,6 +685,22 @@
         margin: 25px;
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .blog__post-wrapper .blog__post-content {
+    .post-content__image-wrapper img {
+      height: 100%;
+    }
+
+    .post-content__quote {
+      padding-right: 150px;
+    }
+  }
+
+  .tabs__inner .cases__nav {
+    top: 180px;
   }
 
   .mainpage__wrapper {
@@ -861,6 +868,10 @@
   .topscreen__content-text {
     font-size: 15px;
   }
+
+  .competentions__list li, .priorities__list li{
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -869,12 +880,12 @@
     padding-right: 30px;
   }
 
-  .priorities__list li,
-  .competentions__list li {
-    font-size: 18px;
-    padding: 3px 0 3px 31px;
+  // .priorities__list li,
+  // .competentions__list li {
+  //   font-size: 18px;
+  //   padding: 3px 0 3px 31px;
 
-  }
+  // }
 }
 
 @media (max-width: 470px) {
@@ -984,12 +995,12 @@
     margin-bottom: 30px;
   }
 
-  .priorities__list li,
-  .competentions__list li {
-    font-size: 18px;
-    padding: 3px 0 3px 31px;
+  // .priorities__list li,
+  // .competentions__list li {
+  //   font-size: 18px;
+  //   padding: 3px 0 3px 31px;
 
-  }
+  // }
 
   .wedo__tag {
     font-size: 13px;
