@@ -1,0 +1,140 @@
+.contacts__main-wrapper {
+  min-height: calc(100vh - 149px);
+  background-color: #EBF0FA;
+}
+
+.contacts__wrapper {
+  height: 533px;
+  width: 100%;
+  position: relative;
+  padding: 64px;
+
+  .contacts__maps-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: -64px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .contacts__content {
+    position: relative;
+    z-index: 1;
+    /* z-index должен быть больше, чем у Google Maps */
+    min-width: 260px;
+    max-width: 60%;
+    padding: 47px 57px 47px 47px;
+    background: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+
+    .contacts__address-inner {
+      border-right: 1px solid #e6e6e6;
+      padding-right: 32px;
+      color: #A4A4A4;
+      font-size: 15px;
+      min-width: 260px;
+      width: 45%;
+    }
+
+    .contacts__inner-title {
+      font-size: 30px;
+      line-height: 110%;
+      color: #333333;
+      margin-bottom: 35px;
+    }
+
+    .contacts__inner-text {
+      margin-bottom: 17px;
+    }
+
+    .contacts__address-terxt {
+      font-style: normal;
+      color: #333333;
+      font-size: 15px;
+      line-height: 130%;
+      margin-bottom: 17px;
+    }
+
+    .contacts__email-link {
+      color: $orange2;
+      font-size: 15px;
+      display: block;
+    }
+
+    .contacts__phone {
+      color: #333333;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    .contacts__company-name {
+      font-size: 17px;
+      line-height: 130%;
+      color: #333333;
+      display: block;
+    }
+
+    .contacts__form-inner {
+      padding-left: 47px;
+      min-width: 260px;
+      width: 55%;
+
+      .contacts__form-title {
+        margin-bottom: 57px;
+      }
+
+      .form__input-wrapper {
+        height: 55px;
+        max-width: 291px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        transition: all .5s;
+
+        .input__title {
+          font-size: 17px;
+          line-height: 130%;
+          color: #333333;
+          position: absolute;
+          top: 15px;
+          transition: all .5s;
+        }
+
+        .contact-form__input-label {
+          width: 100%;
+
+          input {
+            outline: none;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #bbb;
+          }
+        }
+
+        &:focus-within, &.wrapper-filled {
+          .input__title {
+            font-size: 13px;
+            color: #bbb;
+            top: 0;
+          }
+
+          .contact-form__input-label input {
+            border-bottom: 2px solid $orange;
+            font-size: 17px;
+            line-height: 130%;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

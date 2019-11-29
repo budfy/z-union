@@ -1,0 +1,71 @@
+.mainpage {
+  &__wrapper {
+    background: linear-gradient(180deg, #FFF 20.81%, rgba(255, 255, 255, 0) 100%), url(../img/main_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: calc(100vh - 153px);
+    padding-top: 100px;
+  }
+
+  &__content {
+    max-width: 535px;
+    margin: 0 auto;
+
+    .content__title {
+      font-size: 55px;
+      line-height: 110%;
+      margin-bottom: 50px;
+    }
+
+    .content__links {
+      padding-top: 59px;
+
+      .content__link {
+        font-size: 17px;
+        line-height: 110%;
+        color: #333;
+      }
+
+      .link__presents {
+        position: relative;
+        padding-left: 66px;
+        margin-right: 55px;
+
+        &::before {
+          content: '';
+          background-image: url(../img/icons/playtringle.svg);
+          padding: 22px;
+          border: 2px solid #333;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          left: 0;
+          bottom: 50%;
+          transform: translateY(50%);
+        }
+      }
+
+      .link__cases {
+        padding: 15px 85px 15px 29px;
+        border: 2px solid #333;
+        border-radius: 25px;
+        position: relative;
+
+        &::after {
+          content: '';
+          background-image: url(../img/icons/Arrow.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          width: 31px;
+          height: 6px;
+          right: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

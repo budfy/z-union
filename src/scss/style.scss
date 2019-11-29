@@ -1,0 +1,153 @@
+@import 'global';
+@import 'fonts';
+@import 'vars';
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    START CODE
+//
+//-----------------------------------------------------------------------------------------------------------
+
+// ------------------------------------------ HEADER ------------------------------------------
+.header {
+  &__wrapper {
+    margin: 50px 38px 50px 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .burger__menu, .burger__menu-black{
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__lang-checker {
+    display: inline-block;
+    color: #B5B5B5;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+
+  &__nav {
+    margin-right: auto;
+    ul li {
+      display: inline-block;
+      margin-left: 113px;
+
+      &+li {
+        margin-left: 44px;
+      }
+
+      a {
+        font-size: 17px;
+        line-height: 110%;
+        color: $grey2;
+        transition: all 0.6s;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          margin: 0 auto;
+          transition: all 0.4s;
+
+        }
+
+        &:hover {
+          color: #232322;
+
+          &:after {
+            width: 100%;
+            background-color: $orange2;
+          }
+        }
+
+        &.active {
+          color: #232322;
+
+          &:after {
+            width: 100%;
+            background-color: $orange2;
+          }
+        }
+      }
+    }
+  }
+
+  &__tel {
+    font-size: 17px;
+    line-height: 110%;
+    color: black;
+    margin-right: 42px;
+    margin-left: auto;
+  }
+
+  &__btn {
+    padding: 19px 46px 14px;
+    background-color: $orange;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 110%;
+    color: white;
+    border-radius: 24px;
+  }
+
+  &.header-black {
+    background-color: $bgblack;
+
+    .header__wrapper {
+      padding: 50px 38px 50px 58px;
+      margin: 0;
+    }
+  }
+
+  &.header__logo-black {
+    .header__lang-checker {
+      color: #7c7c7c;
+    }
+  }
+
+  &__nav ul li .nav__link-black {
+    color: #7c7c7c;
+
+    &.active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__tel-black {
+    color: #fff;
+  }
+  .mobile-checker{
+    display: none;
+  }
+}
+
+// ------------------------------------------ MAIN PAGE ------------------------------------------
+
+@import 'mainpage';
+@import 'about';
+@import 'technologies';
+@import 'cases';
+@import 'presentation';
+@import 'blog';
+@import 'contacts';
+
+
+
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    END CODE
+//
+//-----------------------------------------------------------------------------------------------------------
+
+@import 'media';

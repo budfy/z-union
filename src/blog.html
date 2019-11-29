@@ -1,0 +1,115 @@
+@@include('./components/_head.html')
+
+<body class="wow slideInRight">
+  @@include('./components/_header.html')
+
+
+
+  <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
+  <main>
+
+    <div class="container">
+      <div class="blog__wrapper">
+        <div class="blog__top-item">
+          <h3 class="blog__title">Блог</h3>
+          <div class="blog__sort-box" id="blog__sort-box">
+            <button class="sort__btn sort__btn--on" data-sort-by="number">Сначала популярные</button>
+            <button class="sort__btn" data-sort-by="symbol">Сначала новые</button>
+          </div>
+        </div>
+
+        <div class="blog__content">
+
+          <div class="blog__topic" style="background-image: url(img/content/blog/image1.jpg);"  data-postdate='2019-10-12'>
+            <div class="blog__topic-inner">
+              <a href="blog-post.html">
+                <h4 class="topic__title">Менеджер в гостинице или, как его еще называют</h4>
+              </a>
+              <div class="topic__date icon-clock-o">12 октября, 2019</div>
+              <div class="topic__counts">
+                <span class="topic__comments icon-comment-o">25</span>
+                <span class="topic__views icon-eye">57</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__topic" style="background-image: url(img/content/blog/image2.jpg);"  data-postdate='2018-09-25'>
+            <div class="blog__topic-inner">
+              <a href="blog-post.html">
+                <h4 class="topic__title">Менеджер в гостинице или, как его еще называют</h4>
+              </a>
+              <div class="topic__date icon-clock-o">25 сентября, 2018</div>
+              <div class="topic__counts">
+                <span class="topic__comments icon-comment-o">25</span>
+                <span class="topic__views icon-eye">25</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__topic" style="background-image: url(img/content/blog/image3.jpg);" data-postdate='2018-09-13'>
+            <div class="blog__topic-inner">
+              <a href="blog-post.html">
+                <h4 class="topic__title">Менеджер в гостинице или, как его еще называют</h4>
+              </a>
+              <div class="topic__date icon-clock-o" >13 сентября, 2018</div>
+              <div class="topic__counts">
+                <span class="topic__comments icon-comment-o">25</span>
+                <span class="topic__views icon-eye">30</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog__topic" style="background-image: url(img/content/blog/image3.jpg);" data-postdate='2018-09-13'>
+            <div class="blog__topic-inner">
+              <a href="blog-post.html">
+                <h4 class="topic__title">Менеджер в гостинице или, как его еще называют</h4>
+              </a>
+              <div class="topic__date icon-clock-o" >13 сентября, 2018</div>
+              <div class="topic__counts">
+                <span class="topic__comments icon-comment-o">25</span>
+                <span class="topic__views icon-eye">30</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog__topic" style="background-image: url(img/content/blog/image3.jpg);" data-postdate='2018-09-13'>
+            <div class="blog__topic-inner">
+              <a href="blog-post.html">
+                <h4 class="topic__title">Менеджер в гостинице или, как его еще называют</h4>
+              </a>
+              <div class="topic__date icon-clock-o" >13 сентября, 2018</div>
+              <div class="topic__counts">
+                <span class="topic__comments icon-comment-o">25</span>
+                <span class="topic__views icon-eye">30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__topic blog__subscribe-post" data-postdate='1970-01-01'>
+            <h4 class="subscribe__title">Подпишитесь на рассылку:</h4>
+            <p class="subscribe__text">Идеи, которые нас вдохновляют, видео-интервью и переводы исследований, которые
+              были нам полезны в процессе работы.</p>
+            <form>
+              <div class="subscribe__form">
+                <label class="subscribe__input">
+                  <input type="email" placeholder="Введите e-mail">
+                </label>
+                <button type="submit"></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <a href="" class="blog__more-link"><span>Еще</span></a>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
+
+
+
+  @@include('./components/_footer.html')
+</body>
+
+</html>
