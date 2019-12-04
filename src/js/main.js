@@ -4,26 +4,23 @@ $(function () {
     var url = window.location.hash;
     if($(this).scrollTop() >= window.innerHeight * 0.8 && url != '#8') {
         $('.top__menu').addClass('scrolled');
-    }
-    else{
+        $('.burger__menu-black').hide();
+      }
+      else{
         $('.top__menu').removeClass('scrolled');
+        $('.burger__menu-black').show();
     }
   });
 
-  var controller = new slidebars();
-        controller.init();
-        $( '.toggle-id-1' ).on( 'click', function ( event ) {
-          // Stop default action and bubbling
-          event.stopPropagation();
-          event.preventDefault();
-          // Toggle the Slidebar with id 'id-1'
-          controller.toggle( 'id-1' );
-        } );
-
-  // $('.burger__menu, .burger__menu-black').click(function () {
-  //   $('.header__nav').toggleClass('header__nav--open');
-  //   $('body').toggle().css({"position":"absolute","transform":"translateX(-100%)","overflow-x":"auto"});
-  // });
+  $('.burger__menu').click(function () {
+    $('.header__nav-white').toggleClass('header__nav--open');
+    $('.page__content').toggleClass('page__content-toggle');
+  });
+  
+  $('.burger__menu-black').click(function () {
+    $('.header__nav-black').toggleClass('header__nav--open');
+    $('.page__content').toggleClass('page__content-toggle');
+  });
 
   $('.cases__burger-icon').click(function () {
     $(this).toggleClass('clicked');
