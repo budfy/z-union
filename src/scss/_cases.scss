@@ -85,7 +85,7 @@
     .slider__content {
       padding-top: 50px;
       border-top: 1px solid #e6e6e6;
-      max-width: calc(100vw - 412px);
+      //max-width: calc(100vw - 412px); //включить, если слайдеры будут выходить за пределы экрана
       position: relative;
 
       .slider__description {

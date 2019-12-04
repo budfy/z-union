@@ -45,7 +45,8 @@ let gulp = require ('gulp'),
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
-        'node_modules/animate.css/animate.css'
+        'node_modules/animate.css/animate.css',
+        'node_modules/Slidebars/dist/slidebars.css'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -65,6 +66,7 @@ let gulp = require ('gulp'),
         'node_modules/isotope-layout/dist/isotope.pkgd.js',
         'node_modules/wowjs/dist/wow.js',
         'node_modules/jquery-scrollify-vilcheuski/jquery.scrollify.js',
+        'node_modules/Slidebars/dist/slidebars.js'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.js'))

@@ -166,16 +166,17 @@
       display: block;
       box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.13);
       border-radius: 5px;
-      font-size: 22px;
+      font-size: 13px;
       line-height: 110%;
       letter-spacing: 0.1em;
       color: #B5B5B5;
       text-transform: uppercase;
-      text-align: center;
-      margin: 20px;
-      height: 70px;
-      padding: 25px 100px 25px 15px;
+      text-align: left;
+      margin: 20px 0;
+      //height: 70px;
+      padding: 20px;
       position: relative;
+      width: 100%;
 
       .cases__burger-icon {
         position: absolute;
@@ -576,12 +577,16 @@
 
   .header__wrapper {
     position: relative;
-    margin: 0 20px;
+    margin: 20px;
     justify-content: space-between;
 
     .burger__menu,
     .burger__menu-black {
       display: block;
+      z-index: 101;
+      position: fixed;
+      right: 0;
+      top: 0;
 
       .ham {
         cursor: pointer;
@@ -639,19 +644,21 @@
     }
 
     .header__nav {
-      transform: scale(0);
-      transition: all 1s;
-      position: absolute;
-      transform-origin: top right;
-      top: 83px;
-      border: 1px solid #dedede;
-      border-radius: 7px;
-      right: 0;
-      width: 280px;
-      height: fit-content;
+      width: 100vw;
+      height: 100vh;
       z-index: 100;
-      box-shadow: 0px 0px 20px rgba(102, 102, 102, 0.15);
       background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: none;
+      &.mobile__nav{
+        display: block;
+      }
 
       &.header__nav-black {
         background-color: #232322;
@@ -660,7 +667,9 @@
 
       ul {
         text-align: center;
-        margin: 30px;
+        margin: 50px auto;
+        width: 130px;
+
 
         li {
           display: block;
@@ -671,10 +680,11 @@
       }
 
 
-      &.header__nav--open {
-        transform: scale(1);
-        padding-bottom: 30px;
-      }
+      // &.header__nav--open {
+      //   transform: translateX(100%);
+      //   padding-bottom: 30px;
+      //   opacity: 1;
+      // }
     }
 
     .header__lang-checker {

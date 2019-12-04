@@ -278,10 +278,19 @@
 
   &-content {
     position: absolute;
+    left: 0;
     bottom: -2px;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(231, 56, 39, 0) 0%, rgba(35, 35, 34, 0.85) 50%, rgba(35, 35, 34, 1) 90%);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#232322+0,232322+50,232322+90&0+0,0.5+50,1+90 */
+    background: -moz-linear-gradient(top, rgba(35, 35, 34, 0) 0%, rgba(35, 35, 34, 0.5) 50%, rgba(35, 35, 34, 1) 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(35, 35, 34, 0) 0%, rgba(35, 35, 34, 0.5) 50%, rgba(35, 35, 34, 1) 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(35, 35, 34, 0) 0%, rgba(35, 35, 34, 0.5) 50%, rgba(35, 35, 34, 1) 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00232322', endColorstr='#232322', GradientType=0);
+    /* IE6-9 */
     width: 100%;
     max-width: 320px;
     height: 100px;
@@ -455,7 +464,8 @@
     width: 35px;
     height: 100%;
     z-index: 3;
-    &.slick-disabled{
+
+    &.slick-disabled {
       display: none;
     }
 
@@ -576,7 +586,8 @@
       color: #d68f44;
       border-bottom: 2px solid #d68f44;
     }
-    &:first-child{
+
+    &:first-child {
       padding-left: 0;
       margin-left: 0;
     }

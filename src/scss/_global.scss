@@ -17,6 +17,8 @@ body{
   font-weight: 400;
   max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  transition: all 1s;
 }
 
 a{
@@ -39,3 +41,10 @@ h1, h2, h3, h4, h5, h6, p{
   max-width: 1440px;
   margin: 0 auto;
 }
+
+button, input{
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+

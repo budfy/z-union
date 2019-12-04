@@ -10,9 +10,20 @@ $(function () {
     }
   });
 
-  $('.burger__menu, .burger__menu-black').click(function () {
-    $('.header__nav').toggleClass('header__nav--open');
-  });
+  var controller = new slidebars();
+        controller.init();
+        $( '.toggle-id-1' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+          // Toggle the Slidebar with id 'id-1'
+          controller.toggle( 'id-1' );
+        } );
+
+  // $('.burger__menu, .burger__menu-black').click(function () {
+  //   $('.header__nav').toggleClass('header__nav--open');
+  //   $('body').toggle().css({"position":"absolute","transform":"translateX(-100%)","overflow-x":"auto"});
+  // });
 
   $('.cases__burger-icon').click(function () {
     $(this).toggleClass('clicked');
@@ -26,6 +37,11 @@ $(function () {
 
   $('.team__inner img').click(function () {
     $('.team__inner').toggleClass('team__inner--clicked');
+  });
+
+  $('.tab__link').click(function (){
+    $('.cases__burger-icon').removeClass('clicked');
+    $('.technologies__burger-icon').removeClass('clicked');
   });
 
   //------------------------------------- popups controlling-----------------------
@@ -496,7 +512,4 @@ $(function () {
       $('#wrapper-text').removeClass('wrapper-filled');
     }
   });
-
-  $('.presentation__slide[aria-hidden="true"]').addClass('someclass');
-
 });
