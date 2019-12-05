@@ -13,13 +13,20 @@ $(function () {
   });
 
   $('.burger__menu').click(function () {
-    $('.header__nav-white').toggleClass('header__nav--open');
+    $('.mobile__nav.header__nav-white').toggleClass('header__nav--open');
     $('.page__content').toggleClass('page__content-toggle');
   });
   
   $('.burger__menu-black').click(function () {
     $('.header__nav-black').toggleClass('header__nav--open');
     $('.page__content').toggleClass('page__content-toggle');
+  });
+
+  $('.mobile__nav-close').click(function(){
+    $('.mobile__nav').removeClass('header__nav--open');
+    $('.ham').removeClass('active');
+    $('.page__content').removeClass('page__content-toggle');
+    $('body').removeClass('scroll-hidden');
   });
 
   $('.cases__burger-icon').click(function () {
@@ -45,45 +52,59 @@ $(function () {
 
   $('.first-popup__link').click(function () {
     $('#first-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.second-popup__link').click(function () {
     $('#second-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.third-popup__link').click(function () {
     $('#third-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.fourth-popup__link').click(function () {
     $('#fourth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.fifth-popup__link').click(function () {
     $('#fifth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.sixth-popup__link').click(function () {
     $('#sixth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.seventh-popup__link').click(function () {
     $('#seventh-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.eight-popup__link').click(function () {
     $('#eight-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.nineth-popup__link').click(function () {
     $('#nineth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.tenth-popup__link').click(function () {
     $('#tenth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.eleventh-popup__link').click(function () {
     $('#eleventh-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.tvelveth-popup__link').click(function () {
     $('#tvelveth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.therteentnth-popup__link').click(function () {
     $('#therteentnth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
   $('.fourteenth-popup__link').click(function () {
     $('#fourteenth-popup').addClass('popup--open');
+    $('body').addClass('scroll-hidden');
   });
 
   $('.edu__link').click(function (){
@@ -91,6 +112,7 @@ $(function () {
     $('.popup__tab-menu').find('.popup__tab-link').removeClass('popup__tab-link--open');
     $('.popup__tab-edu').addClass('popup__tab--open');
     $('.popup__edu-link').addClass('popup__tab-link--open');
+    $('body').addClass('scroll-hidden');
   });
 
   $('.exp__link').click(function (){
@@ -98,6 +120,7 @@ $(function () {
     $('.popup__tab-menu').find('.popup__tab-link').removeClass('popup__tab-link--open');
     $('.popup__tab-exp').addClass('popup__tab--open');
     $('.popup__exp-link').addClass('popup__tab-link--open');
+    $('body').addClass('scroll-hidden');
   });
 
   $('.skill__link').click(function (){
@@ -105,10 +128,12 @@ $(function () {
     $('.popup__tab-menu').find('.popup__tab-link').removeClass('popup__tab-link--open');
     $('.popup__tab-skill').addClass('popup__tab--open');
     $('.popup__skill-link').addClass('popup__tab-link--open');
+    $('body').addClass('scroll-hidden');
   });
 
   $('.popup__close-btn').click(function(){
     $('.popup__block').find('.popup--open').removeClass('popup--open')
+    $('body').removeClass('scroll-hidden');
   });
 
   $('.popup__edu-link').click(function(){
