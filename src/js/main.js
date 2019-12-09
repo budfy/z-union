@@ -15,11 +15,13 @@ $(function () {
   $('.burger__menu').click(function () {
     $('.mobile__nav.header__nav-white').toggleClass('header__nav--open');
     $('.page__content').toggleClass('page__content-toggle');
+    //$('.ham').toggleClass('active');
   });
   
   $('.burger__menu-black').click(function () {
     $('.header__nav-black').toggleClass('header__nav--open');
     $('.page__content').toggleClass('page__content-toggle');
+    //$('.ham').toggleClass('active');
   });
 
   $('.mobile__nav-close').click(function(){

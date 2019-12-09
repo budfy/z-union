@@ -8,6 +8,10 @@
 //-----------------------------------------------------------------------------------------------------------
 
 // ------------------------------------------ HEADER ------------------------------------------
+.burger__menu, .burger__menu-black{
+  display: none;
+}
+
 .header {
   &__wrapper {
     margin: 50px 38px 50px 58px;
@@ -15,9 +19,6 @@
     justify-content: space-between;
     align-items: center;
 
-    .burger__menu, .burger__menu-black{
-      display: none;
-    }
   }
 
   &__logo {
@@ -130,7 +131,9 @@
   }
 }
 
-// ------------------------------------------ MAIN PAGE ------------------------------------------
+.mobile__nav{
+  display: none;
+}
 
 @import 'mainpage';
 @import 'about';

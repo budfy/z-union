@@ -583,71 +583,70 @@
     padding: 20px;
     margin: 0;
     justify-content: space-between;
+  }
+  
+  .burger__menu,
+  .burger__menu-black {
+    display: block;
 
-    .burger__menu,
-    .burger__menu-black {
-      display: block;
-
-      svg {
-        height: 60px;
-        width: 60px;
-      }
-
-      .ham {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: transform 400ms;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      .hamRotate.active {
-        transform: rotate(45deg);
-      }
-
-      .hamRotate180.active {
-        transform: rotate(180deg);
-      }
-
-      .line {
-        fill: none;
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke: $orange2;
-        stroke-width: 5.5;
-        stroke-linecap: round;
-      }
-
-      .ham8 .top {
-        stroke-dasharray: 40 160;
-      }
-
-      .ham8 .middle {
-        stroke-dasharray: 40 142;
-        transform-origin: 50%;
-        transition: transform 400ms;
-      }
-
-      .ham8 .bottom {
-        stroke-dasharray: 40 85;
-        transform-origin: 50%;
-        transition: transform 400ms, stroke-dashoffset 400ms;
-      }
-
-      .ham8.active .top {
-        stroke-dashoffset: -64px;
-      }
-
-      .ham8.active .middle {
-        transform: rotate(90deg);
-      }
-
-      .ham8.active .bottom {
-        stroke-dashoffset: -64px;
-      }
+    svg {
+      height: 60px;
+      width: 60px;
     }
 
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 400ms;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: $orange2;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham8 .top {
+      stroke-dasharray: 40 160;
+    }
+
+    .ham8 .middle {
+      stroke-dasharray: 40 142;
+      transform-origin: 50%;
+      transition: transform 400ms;
+    }
+
+    .ham8 .bottom {
+      stroke-dasharray: 40 85;
+      transform-origin: 50%;
+      transition: transform 400ms, stroke-dashoffset 400ms;
+    }
+
+    .ham8.active .top {
+      stroke-dashoffset: -64px;
+    }
+
+    .ham8.active .middle {
+      transform: rotate(90deg);
+    }
+
+    .ham8.active .bottom {
+      stroke-dashoffset: -64px;
+    }
   }
 
   .header__nav {
@@ -674,21 +673,23 @@
       height: 60px;
       width: 60px;
       position: absolute;
+      margin: 20px;
       top: 0;
       right: 0;
-      &::before, &::after{
-        position: absolute;
-        content: "";
-        height: 3px;
-        width: 30px;
-        background-color: #F58638;
-        transform: rotate(45deg);
-        top: 50%;
-        border-radius: 3px;
-      }
-      &::after{
-        transform: rotate(-45deg);
-      }
+      // &::before, &::after{
+      //   position: absolute;
+      //   content: "";
+      //   height: 3px;
+      //   width: 30px;
+      //   background-color: #F58638;
+      //   transform: rotate(45deg);
+      //   top: 50%;
+      //   border-radius: 3px;
+      //   left: 15px;
+      // }
+      // &::after{
+      //   transform: rotate(-45deg);
+      // }
     }
 
     &.header__nav-black {
@@ -874,7 +875,7 @@
       display: flex;
       flex-wrap: wrap;
       padding: 15px 29px 15px 66px;
-      margin-left: 30px;
+      margin-left: 0;
       margin-bottom: 40px;
       display: block;
       max-width: 251px;
@@ -907,6 +908,11 @@
 }
 
 @media (max-width: 600px) {
+
+  .mainpage__content{
+    padding: 0 30px;
+  }
+
   .topscreen__content-title {
     font-size: 30px;
   }
@@ -1015,15 +1021,15 @@
     padding-top: 30px;
 
     .content__title {
-      margin: 0 30px 30px;
+      margin: 0 30px 30px 0;
     }
 
     .mainpage__content .content__links {
-      padding-top: 0px;
-      padding-bottom: 20px;
+      padding-top: 0;
+      padding-bottom: 15px;
 
       .content__link {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
       }
     }
   }
