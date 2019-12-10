@@ -64,7 +64,8 @@ let gulp = require ('gulp'),
         'src/js/jquery.resizeOnApproach.1.0.min.js',
         'node_modules/isotope-layout/dist/isotope.pkgd.js',
         'node_modules/wowjs/dist/wow.js',
-        'node_modules/jquery-scrollify-vilcheuski/jquery.scrollify.js'
+        'node_modules/jquery-scrollify-vilcheuski/jquery.scrollify.js',
+        'node_modules/body-scroll-lock/lib/bodyScrollLock.js'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.js'))

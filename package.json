@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "Slidebars": "^2.0.0",
+    "body-scroll-lock": "^2.6.4",
     "isotope-layout": "^3.0.6",
     "onepage-scroll-jquery": "^1.0.0"
   },
