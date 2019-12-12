@@ -1,7 +1,7 @@
 @@include('./components/_head-about.html')
 
 <body class="wow slideInUp">
-    
+
   @@include('./components/_mobile__nav.html')
 
   <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
@@ -232,12 +232,12 @@
           </ul>
         </div>
       </section>
+    </div>
   </main>
   <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
   @@include('./components/_footer.html')
-  </div>
   <script>
-      $(function () {
+    $(function () {
       $.scrollify({
         section: ".slide-section",
         easing: "easeOutExpo",
@@ -254,23 +254,23 @@
         afterResize: function () {},
         afterRender: function () {}
       });
-      });
-    </script>
+    });
+  </script>
   <script>
     $(function () {
-          $(window).scroll(function () {
-            var url = window.location.hash;
-            if ($(this).scrollTop() >= window.innerHeight * 0.8 && url != '#8') {
-              $('.top__menu').addClass('scrolled');
-              $('.header-black').hide();
-              $('.header').show();
-            } else {
-              $('.top__menu').removeClass('scrolled');
-              $('.header-black').show();
-              $('.header:not(.header-black)').hide();
-            }
-          });
-        });
+      $(window).scroll(function () {
+        var url = window.location.hash;
+        if ($(this).scrollTop() >= window.innerHeight * 0.8 && url != '#8') {
+          $('.top__menu').addClass('scrolled');
+          $('.header-black').hide();
+          $('.header').show();
+        } else {
+          $('.top__menu').removeClass('scrolled');
+          $('.header-black').show();
+          $('.header:not(.header-black)').hide();
+        }
+      });
+    });
   </script>
 </body>
 
