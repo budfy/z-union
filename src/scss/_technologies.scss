@@ -190,10 +190,14 @@
 
 .tab__content-item {
   display: none;
+  transition: transform 1s;
 
   &.current-tab {
     display: block;
     animation: showTab 1s ease-in-out both;
+  }
+  &--left{
+    transform: translateX(-300px);
   }
 }
 

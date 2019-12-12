@@ -24,11 +24,13 @@ $(function () {
   $('.cases__burger-icon').click(function () {
     $(this).toggleClass('clicked');
     $('.cases__nav').toggleClass('cases__nav--open');
+    $('.tab__content-item').toggleClass('tab__content-item--left');
   });
 
   $('.technologies__burger-icon').click(function () {
     $(this).toggleClass('clicked');
     $('.technologies__nav').toggleClass('technologies__nav--open');
+    $('.tab__content-item').toggleClass('tab__content-item--left');
   });
 
   $('.team__inner img').click(function () {
@@ -38,6 +40,7 @@ $(function () {
   $('.tab__link').click(function (){
     $('.cases__burger-icon').removeClass('clicked');
     $('.technologies__burger-icon').removeClass('clicked');
+    $('.tab__content-item').removeClass('tab__content-item--left');
   });
 
   //------------------------------------- popups controlling-----------------------
@@ -148,23 +151,6 @@ $(function () {
   });
 
    //------------------------------------- popups controlling-----------------------
-
-  $.scrollify({
-    section: ".slide-section",
-    easing: "easeOutExpo",
-    scrollSpeed: 1200,
-    offset: 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll: true,
-    before: function () {},
-    after: function () {},
-    afterResize: function () {},
-    afterRender: function () {}
-  });
 
   $('.nav__link').each(function () {
     var location = window.location.pathname;
@@ -321,6 +307,19 @@ $(function () {
     edgeFriction: 0.5
   });
 
+  $('.science__contracts').slick({
+    infinite: false,
+    arrows: false,
+    variableWidth: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    rows: '0',
+    touchMove: true,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    edgeFriction: 0.5
+  });
+
   var $container = $('.blog__content');
   // sorting
   $('#blog__sort-box button').click(function () {
@@ -335,8 +334,6 @@ $(function () {
     return false;
   });
 
-  $(function () {
-
     $container.isotope({
       itemSelector: '.blog__topic',
       getSortData: {
@@ -344,7 +341,7 @@ $(function () {
         number: '.topic__views parseInt',
       }
     });
-  });
+
   $('.sort__btn').click(function () {
     $(this).removeClass('sort__btn--on');
     $(this).siblings().addClass('sort__btn--on');

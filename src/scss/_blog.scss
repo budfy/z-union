@@ -47,10 +47,23 @@
       height: 343px;
       margin-left: 20px;
       margin-top: 20px;
-      padding: 30px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+
+      .topic__bg-filter {
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+        /* IE6-9 */
+      }
 
       &-inner {
         display: flex;
@@ -239,12 +252,26 @@
     width: 100%;
     max-width: 1440px;
     height: 444px;
+    max-height: 50vh;
     margin: 0 auto;
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
     color: #ffffff;
+
+    .post__bg-filter {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 100%;
+      width: 100%;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 1) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+      /* IE6-9 */
+    }
 
     .post-header__back-link {
       font-size: 20px;
@@ -513,14 +540,13 @@
 }
 
 .blog__post-comments {
-  margin-top: 60px;
   max-width: 741px;
   width: 100%;
-  margin: 0 auto;
+  margin: 60px auto 0;
 
   .post-comments__title {
     font-size: 27px;
-    line-height: 110px;
+    line-height: 110%;
     margin-bottom: 24px;
   }
 
@@ -620,7 +646,7 @@
 }
 
 .post__related {
-  margin: 120px auto;
+  margin: 88px auto 0;
   max-width: 1440px;
   width: 100%;
   padding: 0;

@@ -1,6 +1,7 @@
 @@include('./components/_head-about.html')
 
 <body class="wow slideInUp">
+    
   @@include('./components/_mobile__nav.html')
 
   <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
@@ -235,6 +236,26 @@
   <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
   @@include('./components/_footer.html')
   </div>
+  <script>
+      $(function () {
+      $.scrollify({
+        section: ".slide-section",
+        easing: "easeOutExpo",
+        scrollSpeed: 600,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function () {},
+        after: function () {},
+        afterResize: function () {},
+        afterRender: function () {}
+      });
+      });
+    </script>
   <script>
     $(function () {
           $(window).scroll(function () {
