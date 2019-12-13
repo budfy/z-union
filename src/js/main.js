@@ -312,7 +312,7 @@ $(function () {
     arrows: false,
     variableWidth: true,
     slidesToScroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 1,
     rows: '0',
     touchMove: true,
     swipeToSlide: true,
