@@ -9,7 +9,7 @@
   position: relative;
   padding: 64px;
 
-  .contacts__maps-background {
+  .contacts__map-wrapper {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -17,6 +17,9 @@
     bottom: -64px;
     left: 0;
     z-index: 0;
+    .contacts__maps-background{
+height: 100%;
+    }
   }
 
   .contacts__content {
@@ -96,7 +99,6 @@
         position: relative;
         display: flex;
         align-items: flex-end;
-        padding-left: 10px;
         margin-bottom: 15px;
         transition: all .5s;
 
@@ -107,6 +109,8 @@
           position: absolute;
           top: 15px;
           transition: all .5s;
+          z-index: -1;
+          left: 0;
         }
 
         .contact-form__input-label {
@@ -117,6 +121,9 @@
             width: 100%;
             border: none;
             border-bottom: 2px solid #bbb;
+            z-index: 1;
+            height: 36px;
+            background-color: transparent;
           }
         }
 

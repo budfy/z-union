@@ -196,7 +196,8 @@
     display: block;
     animation: showTab 1s ease-in-out both;
   }
-  &--left{
+
+  &--left {
     transform: translateX(-300px);
   }
 }
@@ -505,19 +506,31 @@
 
   .tab-image__positioner {
     max-width: 260px;
-    transform: scale(0.7) translateX(0);
-    opacity: .5;
+    transform: scale(1) translateX(0);
+    opacity: .4;
     transition: all 1s;
-    margin-left: -40px;
+    margin-left: -60px;
+    transform-origin: bottom;
+
+    .tab__employer-data,
+    .tab__modal-links {
+      opacity: 0;
+      transition: all 1.2s;
+    }
   }
 
   .tab-image__positioner.slick-current {
+    transform: scale(0.9) translateX(0);
     max-width: 260px;
-    transform: scale(1) translateX(0);
     opacity: 1;
     margin-left: 50px;
     z-index: 2;
     margin-left: 40px;
+
+    .tab__employer-data,
+    .tab__modal-links {
+      opacity: 1;
+    }
   }
 }
 

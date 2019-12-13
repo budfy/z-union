@@ -146,17 +146,17 @@ let gulp = require ('gulp'),
       .pipe(browserSync.reload({stream:true}));
     });
 
-    gulp.task('deletefonts', function() { //задачи для очистки директории со шрифтами в build. Нужна для того, чтобы удалить лишнее.
-      return del('build/fonts/**/*.*');
-    });
+    // gulp.task('deletefonts', function() { //задачи для очистки директории со шрифтами в build. Нужна для того, чтобы удалить лишнее.
+    //   return del('build/fonts/**/*.*');
+    // });
 
-    gulp.task('deleteimg', function() { //аналогично предыдущей, но с картинками.
-      return del('build/img/**/*.*');
-    });
+    // gulp.task('deleteimg', function() { //аналогично предыдущей, но с картинками.
+    //   return del('build/img/**/*.*');
+    // });
 
-    gulp.task('cleanfonts', gulp.series('deletefonts', 'fonts')); //задачи нужна для того, чтобы сразу очистить директорию и залить шрифты по-новой
+    gulp.task('cleanfonts', gulp.series('fonts')); //задачи нужна для того, чтобы сразу очистить директорию и залить шрифты по-новой
 
-    gulp.task('cleanimg', gulp.series('deleteimg', 'images')); //задачи нужна для того, чтобы сразу очистить директорию и залить картинки по-новой
+    gulp.task('cleanimg', gulp.series('images')); //задачи нужна для того, чтобы сразу очистить директорию и залить картинки по-новой
     
 
 

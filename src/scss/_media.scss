@@ -13,7 +13,18 @@
   }
 }
 
+@media (max-width: 1350px) {
+  .header__tel {
+    margin-right: 15px;
+  }
+
+  .header__btn {
+    padding: 19px 25px 14px;
+  }
+}
+
 @media (max-width: 1300px) {
+
   .header__tel {
     display: none;
   }
@@ -497,16 +508,6 @@
     }
   }
 
-  .team__positioner {
-    display: none;
-  }
-
-  .team__title {
-    padding-top: 100px;
-    position: static;
-    transform: none;
-  }
-
   .team__inner-mobile {
     display: flex;
     justify-content: center;
@@ -533,6 +534,11 @@
   .team__title {
     font-size: 13vw;
     text-align: center;
+    left: 5%;
+  }
+
+  .team__wrapper {
+    height: 80vw;
   }
 
   .numeric__wrapper {
@@ -563,6 +569,14 @@
 
   .clients__text {
     padding-bottom: 30px;
+  }
+
+  .header__nav ul {
+    margin-left: auto;
+
+    li {
+      margin-left: 0;
+    }
   }
 }
 
@@ -730,11 +744,11 @@
     }
   }
 
-  .clients-section__title{
+  .clients-section__title {
     padding: 40px 0;
   }
 
-  
+
 }
 
 @media (max-width: 900px) {
@@ -852,7 +866,8 @@
 
     .post-content__quote {
       padding: 30px 60px 30px 30px;
-      &::after{
+
+      &::after {
         right: 10px;
       }
     }
@@ -890,10 +905,35 @@
   }
 
   .contacts__wrapper {
+    max-width: unset;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .contacts__map-wrapper {
+      position: static;
+      height: 50vh;
+      padding: 0 30px 30px;
+    }
 
     .contacts__content {
-      max-width: 95%;
+      max-width: unset;
+      width: 100%;
       padding: 30px;
+      box-shadow: none;
+
+      .contacts__form-inner {
+        width: 100%;
+
+        .form__input-wrapper {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+
+      .contacts__address-inner {
+        width: 100%;
+      }
     }
   }
 
@@ -959,6 +999,10 @@
 
   .contacts__wrapper {
     padding: 20px;
+
+    .contacts__map-wrapper {
+      padding: 20px 0 0;
+    }
   }
 }
 
