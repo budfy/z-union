@@ -61,7 +61,6 @@ let gulp = require ('gulp'),
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-        'src/js/jquery.resizeOnApproach.1.0.min.js',
         'node_modules/isotope-layout/dist/isotope.pkgd.js',
         'node_modules/wowjs/dist/wow.js',
         'node_modules/jquery-scrollify-vilcheuski/jquery.scrollify.js',
@@ -146,13 +145,13 @@ let gulp = require ('gulp'),
       .pipe(browserSync.reload({stream:true}));
     });
 
-    // gulp.task('deletefonts', function() { //задачи для очистки директории со шрифтами в build. Нужна для того, чтобы удалить лишнее.
-    //   return del('build/fonts/**/*.*');
-    // });
+    gulp.task('deletefonts', function() { //задачи для очистки директории со шрифтами в build. Нужна для того, чтобы удалить лишнее.
+      return del('build/fonts/**/*.*');
+    });
 
-    // gulp.task('deleteimg', function() { //аналогично предыдущей, но с картинками.
-    //   return del('build/img/**/*.*');
-    // });
+    gulp.task('deleteimg', function() { //аналогично предыдущей, но с картинками.
+      return del('build/img/**/*.*');
+    });
 
     gulp.task('cleanfonts', gulp.series('fonts')); //задачи нужна для того, чтобы сразу очистить директорию и залить шрифты по-новой
 
