@@ -530,11 +530,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 668px;
-  margin: 20px auto;
-  height: 90%;
-  max-height: 685px;
+  width: 100%;
+  //max-width: 668px;
+  //margin: 20px auto;
+  height: 100%;
+  //max-height: 685px;
   background-color: #232323;
   color: #fff;
   display: none;
@@ -546,18 +546,19 @@
 
   &__close-btn {
     height: 25px;
-    width: 100%;
+    width: 25px;
     background-color: #2e2e2e;
     position: relative;
-    height: 0;
+    margin-left: auto;
+    margin-bottom: 15px;
+    cursor: pointer;
 
     .close-item {
       position: absolute;
       height: 1px;
       width: 20px;
       background-color: #d68f44;
-      cursor: pointer;
-      right: 5px;
+      right: 15px;
       top: 20px;
       transform: rotate(-45deg);
 
@@ -572,7 +573,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 54px;
+    padding: 9px 0 0 54px;
     background-color: #2e2e2e;
   }
 

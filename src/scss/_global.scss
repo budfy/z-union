@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   transition: all 1s;
+  position: relative;
 }
 
 a {
@@ -69,4 +70,5 @@ input {
 }
 .scroll-hidden{
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
