@@ -16,7 +16,7 @@
   &__wrapper {
     padding: 50px 38px 50px 58px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
   }
@@ -34,9 +34,10 @@
   }
 
   &__nav {
+    margin-left: 114px;
       ul li {
       display: inline-block;
-      margin-left: 113px;
+      margin-left: 0;
 
       &+li {
         margin-left: 44px;
@@ -77,6 +78,10 @@
         }
       }
     }
+  }
+
+  &__inner{
+    margin-left: auto;
   }
 
   &__tel {

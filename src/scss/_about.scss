@@ -1,6 +1,10 @@
 // ------------------------------------------ ABOUT PAGE ------------------------------------------
-.sticky-menu__wrapper{
+.sticky-menu__wrapper {
   position: relative;
+}
+
+.slide-section {
+  min-height: 100vh;
 }
 
 .top__menu {
@@ -8,7 +12,7 @@
   top: 0;
   bottom: 0;
   background: transparent;
-  width: 100vw;
+  width: 100%;
   z-index: 50;
   background-color: white;
   transform: translateY(200%);
@@ -37,7 +41,6 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   height: calc(100vh - 152px);
-  min-height: 500px;
 
   &__content {
     max-width: 575px;
@@ -80,7 +83,7 @@
   }
 
   &__container {
-    margin-left: 426px;
+    margin-left: 414px;
   }
 
   &__logos {
@@ -136,7 +139,7 @@
     font-size: 20px;
     line-height: 120%;
     color: #7c7c7c;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
     max-width: 860px;
     padding-right: 15px;
   }
@@ -145,11 +148,21 @@
     height: 100px;
     margin-bottom: 56px;
     margin-right: 50px;
+    width: fit-content;
+
+    .swiper-slide {
+      width: fit-content !important;
+
+      img {
+        cursor: pointer;
+      }
+    }
   }
 
   .swiper-container-horizontal>.swiper-scrollbar {
     height: 1px;
     background-color: #DFDFDF;
+    left: 0;
 
     .swiper-scrollbar-drag {
       height: 2px;
@@ -175,11 +188,38 @@
     width: 100%;
     padding-bottom: 50px;
     overflow: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: -200px;
 
     &-img {
       width: 223px;
-      height: 307px;
+      height: fit-content;
       margin-right: 30px;
+      transform-origin: bottom left;
+      transition: all .5s;
+
+      &--active {
+        transform: translateX(111px);
+      }
+
+      img {
+        transform-origin: bottom left;
+        transition: all .5s;
+      }
+
+      &:hover img {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__tab {
+    display: none;
+
+    &--active {
+      display: block;
     }
   }
 }
@@ -189,7 +229,7 @@
   background-color: #ebf0fa;
 
   &__container {
-    padding: 150px 0 155px 424px;
+    padding: 150px 0 155px 414px;
   }
 
   &__title {
@@ -206,8 +246,7 @@
     padding: 0;
 
     li {
-      padding-left: 51px;
-      padding-bottom: 15px;
+      padding: 7px 0 7px 51px;
       font-size: 32px;
       line-height: 110%;
       color: #333333;
@@ -229,7 +268,7 @@
 
 .wedo {
   &__container {
-    margin-left: 416px;
+    margin-left: 414px;
   }
 
   &__title {
@@ -243,6 +282,12 @@
     justify-content: flex-start;
     margin-left: -20px;
     max-width: 900px;
+    max-height: 210px;
+    overflow-y: hidden;
+
+    &--show {
+      max-height: unset;
+    }
 
     ul li {
       display: inline-block;
@@ -290,7 +335,7 @@
   background-color: #4B66AB;
 
   &__container {
-    padding: 150px 50px 96px 424px;
+    padding: 150px 50px 96px 414px;
   }
 
   &__title {
@@ -304,13 +349,18 @@
   &__list {
     margin: 0 0 56px 0;
     padding: 0;
+    max-height: 250px;
+    overflow-y: hidden;
+
+    &--show {
+      max-height: unset;
+    }
 
     li {
       font-size: 32px;
       line-height: 110%;
-      padding-left: 55px;
+      padding: 7px 0 7px 51px;
       color: white;
-      padding-bottom: 15px;
       position: relative;
 
       &::before {
@@ -354,10 +404,10 @@
 .team {
   position: relative;
 
-  &__wrapper{
+  &__wrapper {
     position: relative;
     padding: 0 30px;
-    height: calc(100vh - 200px);
+    height: 600px;
   }
 
   &__title {
@@ -398,7 +448,6 @@
     & img {
       width: 16vw;
       display: inline-block;
-      cursor: pointer;
       margin: 0;
       padding: 0;
       transition: all .5s;
@@ -406,32 +455,46 @@
       margin: 0 -3.7%;
       object-fit: contain;
       z-index: 2;
-      &:nth-child(1){
+
+      &:nth-child(1) {
         margin-left: 0;
         z-index: 3;
       }
-      &:nth-child(5){
+
+      &:nth-child(5) {
         z-index: 3;
       }
-      &:nth-child(7), &:nth-child(10){
+
+      &:nth-child(7),
+      &:nth-child(10) {
         z-index: 1;
-      } 
+      }
     }
 
-    &.team__inner--clicked img {
-      &:nth-child(5) {
-        transform: scale(1.5);
-      }
+    .team__img--big {
+      transform: scale(1.5);
+    }
 
-      &:nth-child(4),
-      &:nth-child(6) {
-        transform: scale(1.3);
-      }
+    .team__img--medium {
+      transform: scale(1.3);
+    }
 
-      &:nth-child(3),
-      &:nth-child(7) {
-        transform: scale(1.15);
-      }
+    .team_img--small {
+      transform: scale(1.15);
+    }
+  }
+  &__hover-zone{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+    cursor: pointer;
+    .team__hover-block{
+      height: 100%;
+      width: 10%;
     }
   }
 }
@@ -477,8 +540,6 @@
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  min-height: 500px;
 
   &__container {
     padding: 156px 0 135px 350px;

@@ -1,6 +1,6 @@
 @@include('./components/_head-about.html')
 
-<body class="wow slideInUp">
+<body>
 
   @@include('./components/_mobile__nav.html')
 
@@ -64,39 +64,125 @@
               </p>
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-1.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-2.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-3.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-4.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-5.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-1.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img src="img/content/science-logo-2.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="1" src="img/content/science-logo-1.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="2" src="img/content/science-logo-2.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="3" src="img/content/science-logo-3.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="4" src="img/content/science-logo-4.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="5" src="img/content/science-logo-5.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="6" src="img/content/science-logo-1.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="7" src="img/content/science-logo-2.png" alt=""></div>
                 </div>
                 <div class="swiper-scrollbar">
                   <div class="swiper-scrollbar-drag"></div>
                 </div>
               </div>
 
-              <div class="science__tags">
-                <span class="science__tag tag__item">Нейронные сети</span>
-                <span class="science__tag tag__item">Машинное обучение</span>
-                <span class="science__tag tag__item">AR/VR проекты</span>
-                <span class="science__tag tag__item">BI - аналитика</span>
-                <span class="science__tag tag__item">back-end разработка</span>
-                <span class="science__tag tag__item">front-end разработка</span>
-              </div>
-              <div class="science__contracts">
-                <div class="science__contracts-img">
-                  <img src="img/content/contract-1.jpg" alt="">
+              <div class="science__tabs">
+                <div class="science__tab science__tab--active" id="science__tab-1">
+                  <div class="science__tags">
+                    <span class="science__tag tag__item">Нейронные сети</span>
+                    <span class="science__tag tag__item">Машинное обучение</span>
+                    <span class="science__tag tag__item">AR/VR проекты</span>
+                    <span class="science__tag tag__item">front-end разработка</span>
+                  </div>
+                  <div class="science__contracts">
+                    <div class="science__contracts-img science__contracts-img-1" data-id="1">
+                      <img src="img/content/contract-1.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-2" data-id="2">
+                      <img src="img/content/contract-2.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-3" data-id="3">
+                      <img src="img/content/contract-3.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-4" data-id="4">
+                      <img src="img/content/contract-4.jpg" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="science__contracts-img">
-                  <img src="img/content/contract-2.jpg" alt="">
+                <div class="science__tab" id="science__tab-2">
+                  <div class="science__tags">
+                    <span class="science__tag tag__item">Нейронные сети</span>
+                    <span class="science__tag tag__item">Машинное обучение</span>
+                    <span class="science__tag tag__item">AR/VR проекты</span>
+                  </div>
+                  <div class="science__contracts">
+                    <div class="science__contracts-img science__contracts-img-1" data-id="1">
+                      <img src="img/content/contract-1.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-2" data-id="2">
+                      <img src="img/content/contract-2.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-3" data-id="3">
+                      <img src="img/content/contract-3.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-4" data-id="4">
+                      <img src="img/content/contract-4.jpg" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="science__contracts-img">
-                  <img src="img/content/contract-3.jpg" alt="">
+                <div class="science__tab" id="science__tab-3">
+                  <div class="science__tags">
+                    <span class="science__tag tag__item">BI - аналитика</span>
+                    <span class="science__tag tag__item">back-end разработка</span>
+                    <span class="science__tag tag__item">front-end разработка</span>
+                  </div>
+                  <div class="science__contracts">
+                    <div class="science__contracts-img science__contracts-img-1" data-id="1">
+                      <img src="img/content/contract-1.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-2" data-id="2">
+                      <img src="img/content/contract-2.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-3" data-id="3">
+                      <img src="img/content/contract-3.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-4" data-id="4">
+                      <img src="img/content/contract-4.jpg" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="science__contracts-img">
-                  <img src="img/content/contract-4.jpg" alt="">
+                <div class="science__tab" id="science__tab-4">
+                  <div class="science__tags">
+                    <span class="science__tag tag__item">BI - аналитика</span>
+                    <span class="science__tag tag__item">back-end разработка</span>
+                    <span class="science__tag tag__item">front-end разработка</span>
+                  </div>
+                  <div class="science__contracts">
+                    <div class="science__contracts-img science__contracts-img-1" data-id="1">
+                      <img src="img/content/contract-1.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-2" data-id="2">
+                      <img src="img/content/contract-2.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-3" data-id="3">
+                      <img src="img/content/contract-3.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img science__contracts-img-4" data-id="4">
+                      <img src="img/content/contract-4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="science__tab" id="science__tab-5">
+                  <div class="science__tags">
+                    <span class="science__tag tag__item">BI - аналитика</span>
+                    <span class="science__tag tag__item">back-end разработка</span>
+                    <span class="science__tag tag__item">front-end разработка</span>
+                  </div>
+                  <div class="science__contracts">
+                    <div class="science__contracts-img">
+                      <img src="img/content/contract-1.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img">
+                      <img src="img/content/contract-2.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img">
+                      <img src="img/content/contract-3.jpg" alt="">
+                    </div>
+                    <div class="science__contracts-img">
+                      <img src="img/content/contract-4.jpg" alt="">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -177,16 +263,29 @@
                 КОМАНДА
               </div>
               <div class="team__inner">
-                <img src="img/team/team-img-1.png" alt="">
-                <img src="img/team/team-img-2.png" alt="">
-                <img src="img/team/team-img-3.png" alt="">
-                <img src="img/team/team-img-4.png" alt="">
-                <img src="img/team/team-img-5.png" alt="">
-                <img src="img/team/team-img-6.png" alt="">
-                <img src="img/team/team-img-7.png" alt="">
-                <img src="img/team/team-img-8.png" alt="">
-                <img src="img/team/team-img-9.png" alt="">
-                <img src="img/team/team-img-10.png" alt="">
+                <img class="team__img team__img-1" data-id="1" src="img/team/team-img-1.png" alt="">
+                <img class="team__img team__img-2" data-id="2" src="img/team/team-img-2.png" alt="">
+                <img class="team__img team__img-3" data-id="3" src="img/team/team-img-3.png" alt="">
+                <img class="team__img team__img-4" data-id="4" src="img/team/team-img-4.png" alt="">
+                <img class="team__img team__img-5" data-id="5" src="img/team/team-img-5.png" alt="">
+                <img class="team__img team__img-6" data-id="6" src="img/team/team-img-6.png" alt="">
+                <img class="team__img team__img-7" data-id="7" src="img/team/team-img-7.png" alt="">
+                <img class="team__img team__img-8" data-id="8" src="img/team/team-img-8.png" alt="">
+                <img class="team__img team__img-9" data-id="9" src="img/team/team-img-9.png" alt="">
+                <img class="team__img team__img-10" data-id="10" src="img/team/team-img-10.png" alt="">
+              </div>
+
+              <div class="team__hover-zone">
+                <div class="team__hover-block" data-id='1'></div>
+                <div class="team__hover-block" data-id='2'></div>
+                <div class="team__hover-block" data-id='3'></div>
+                <div class="team__hover-block" data-id='4'></div>
+                <div class="team__hover-block" data-id='5'></div>
+                <div class="team__hover-block" data-id='6'></div>
+                <div class="team__hover-block" data-id='7'></div>
+                <div class="team__hover-block" data-id='8'></div>
+                <div class="team__hover-block" data-id='9'></div>
+                <div class="team__hover-block" data-id='10'></div>
               </div>
             </div>
           </div>
@@ -227,7 +326,7 @@
   </main>
   <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
   @@include('./components/_footer.html')
-  <script>
+  <!-- <script>
     $(function () {
       $.scrollify({
         section: ".slide-section",
@@ -246,12 +345,12 @@
         afterRender: function () {}
       });
     });
-  </script>
+  </script> -->
   <script>
     $(function () {
       $(window).scroll(function () {
         var url = window.location.hash;
-        if ($(this).scrollTop() >= window.innerHeight * 0.8 && url != '#8') {
+        if ($(this).scrollTop() >= window.innerHeight * 0.8) {
           $('.top__menu').addClass('scrolled');
           $('.header-black').hide();
           $('.header').show();
