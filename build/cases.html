@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="header__nav mobile__nav header__nav-white">
+  <nav class="header__nav mobile__nav header__nav-white">
   <ul>
     <li><a href="about.html" class="nav__link">О нас</a></li>
     <li><a href="cases.html" class="nav__link">Кейсы</a></li>
@@ -58,8 +58,9 @@
         </div>
   </div>
 </nav>
-    <div class="page__content">
-  <header class="header">
+  <div class="page__content">
+    <div class="page__overlay"></div>
+    <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__logo">
@@ -97,38 +98,46 @@
 
 
 
-  <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
-  <main>
-    <div class="cases__main-wrapper">
-      <div class="container">
-        <div class="tabs__inner">
-          <div class="cases__burger-menu">
-            Наши кейсы
-            <div class="cases__burger-icon">
-                <div class="burger-icon__item"></div>
+    <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
+    <main>
+      <div class="cases__main-wrapper">
+        <div class="container">
+          <div class="tabs__inner">
+            <div class="cases__burger-menu">
+              Наши кейсы
+              <div class="cases__burger-icon tabs__nav-button">
+                <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80">
+                  <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                  <path class="line middle" d="m 30,50 h 40" />
+                  <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <aside class="tab__nav cases__nav">
-            <a href="#" class="cases__link tab__link tab__link-current" data-id="#cases-tab-id1">Сайты</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id2">Сервисы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id3">Приложения</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id4">Агрегаторы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id5">Маркетплейсы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id6">Стенды</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id7">Сайты</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id8">Сервисы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id9">Приложения</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id10">Агрегаторы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id11">Маркетплейсы</a>
-            <a href="#" class="cases__link tab__link" data-id="#cases-tab-id12">Стенды</a>
-            <div class="animation"></div>
-            <div class="rightside"></div>
-          </aside>
+            <aside class="tab__nav cases__nav">
+              <div class="tab__nav-wrapper">
+                <a href="#" class="cases__link tab__link tab__link-current" data-id="#cases-tab-id1">Сайты</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id2">Сервисы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id3">Приложения</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id4">Агрегаторы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id5">Маркетплейсы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id6">Стенды</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id7">Сайты</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id8">Сервисы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id9">Приложения</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id10">Агрегаторы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id11">Маркетплейсы</a>
+                <a href="#" class="cases__link tab__link" data-id="#cases-tab-id12">Стенды</a>
+                <div class="animation"></div>
+              </div>
+              <div class="rightside"></div>
+            </aside>
 
-          <section class="tab__content">
-            <div class="tab__content-item current-tab" id="cases-tab-id1">
-              <div class="tab__inner cases__tab-inner">
-                <div class="slider__wrapper">
+            <section class="tab__content">
+              <div class="tab__content-item current-tab" id="cases-tab-id1">
+                <div class="tab__inner cases__tab-inner">
+                  <div class="slider__wrapper">
 
   <div class="slider__head-title">
     <h4 class="slider__subtitle">Мобильное приложение</h4>
@@ -310,75 +319,75 @@
   </div>
 
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id2">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 2.
+              <div class="tab__content-item" id="cases-tab-id2">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 2.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id3">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 3.
+              <div class="tab__content-item" id="cases-tab-id3">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 3.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id4">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 4.
+              <div class="tab__content-item" id="cases-tab-id4">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 4.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id5">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 5.
+              <div class="tab__content-item" id="cases-tab-id5">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 5.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id6">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 6.
+              <div class="tab__content-item" id="cases-tab-id6">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 6.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id7">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 7.
+              <div class="tab__content-item" id="cases-tab-id7">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 7.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id8">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 8.
+              <div class="tab__content-item" id="cases-tab-id8">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 8.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id9">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 9.
+              <div class="tab__content-item" id="cases-tab-id9">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 9.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id10">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 10.
+              <div class="tab__content-item" id="cases-tab-id10">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 10.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id11">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 11.
+              <div class="tab__content-item" id="cases-tab-id11">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 11.
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="cases-tab-id12">
-              <div class="tab__inner cases__tab-inner">
-                Контент таба 12.
+              <div class="tab__content-item" id="cases-tab-id12">
+                <div class="tab__inner cases__tab-inner">
+                  Контент таба 12.
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
 
-  <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
+    <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
 
 
 
-  <script src="js/libs.min.js"></script>
+    <script src="js/libs.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.min.js"></script>
   </div>

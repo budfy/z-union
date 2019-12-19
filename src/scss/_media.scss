@@ -188,7 +188,9 @@
     justify-content: flex-end;
 
     .cases__burger-menu {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.13);
       border-radius: 5px;
       font-size: 13px;
@@ -197,63 +199,14 @@
       color: #B5B5B5;
       text-transform: uppercase;
       text-align: left;
-      margin: 20px 0;
-      //height: 70px;
-      padding: 20px;
+      margin: 20px 20px 20px 0;
+      padding: 0 0 0 20px;
       position: relative;
       width: 100%;
 
       .cases__burger-icon {
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 30px;
-        cursor: pointer;
-        transition-duration: 1s;
-        position: absolute;
-
-        .burger-icon__item {
-          height: 4px;
-          width: 30px;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: $copycolor;
-          border-radius: 20px;
-          position: absolute;
-          transition-duration: 0.5s;
-          transition-delay: 0.5s;
-
-          &:before {
-            left: 0;
-            position: absolute;
-            top: -7px;
-            height: 4px;
-            width: 30px;
-            background-color: $copycolor;
-            content: "";
-            border-radius: 20px;
-            transition-duration: 0.5s;
-            transition: transform 0.5s, top 0.5s 0.5s;
-
-          }
-
-          &:after {
-            left: 0;
-            position: absolute;
-            top: 7px;
-            height: 4px;
-            width: 30px;
-            background-color: $copycolor;
-            content: "";
-            border-radius: 20px;
-            transition-duration: 0.5s;
-            transition: transform 0.5s, top 0.5s 0.5s;
-          }
-        }
-
-        &.clicked {
+      
+         &.clicked {
           .burger-icon__item {
             transition-duration: 0.1s;
             transition-delay: 0.5s;
@@ -277,15 +230,14 @@
 
     .technologies__nav,
     .cases__nav {
-      position: absolute;
+      position: fixed;
       z-index: 1;
       background-color: #ebf0fa;
-      right: 53px;
-      top: 250px;
-      border-radius: 5px 0 0 5px;
+      right: -260px;
+      top: 0;
+      bottom: 0;
       box-shadow: 0px 0px 20px rgba(85, 110, 176, 0.15);
-      transform-origin: right;
-      transform: translateX(150%) scaleX(0);
+      transform-origin: left;
       transition: all 1s;
 
       .rightside {
@@ -296,13 +248,9 @@
     .technologies__nav {
       background-color: #2E2E2E;
       box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.13);
-      top: 240px;
-      right: 66px;
-    }
-
-    .cases__nav.cases__nav--open,
-    .technologies__nav.technologies__nav--open {
-      transform: translateX(0) scaleX(1);
+      &-wrapper{
+        background-color: #2E2E2E;
+      }
     }
   }
 
@@ -311,7 +259,7 @@
       display: flex;
       justify-content: space-between;
       margin: 25px;
-      padding: 20px;
+      padding: 0 15px;
       font-size: 13px;
       text-transform: uppercase;
       line-height: 110%;
@@ -320,6 +268,7 @@
       letter-spacing: 0.1em;
       background: #2E2E2E;
       border-radius: 5px;
+      align-items: center;
 
       span {
         display: block;
@@ -587,16 +536,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
-  .science__contracts {
-    width: 100%;
-
-    &-img {
-      width: 20%;
-      height: 100%;
-    }
-  }
-
+@media screen and (max-width: 970px) {
   .header.header-black .header__wrapper {
     padding: 20px 0;
     margin: 0 20px;
@@ -615,67 +555,8 @@
   }
 
   .burger__menu,
-  .burger__menu-black {
+  .burger__menu-black, .tabs__nav-button {
     display: block;
-
-    svg {
-      height: 60px;
-      width: 60px;
-    }
-
-    .ham {
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-      transition: transform 400ms;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    .hamRotate.active {
-      transform: rotate(45deg);
-    }
-
-    .hamRotate180.active {
-      transform: rotate(180deg);
-    }
-
-    .line {
-      fill: none;
-      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-      stroke: $orange2;
-      stroke-width: 5.5;
-      stroke-linecap: round;
-    }
-
-    .ham8 .top {
-      stroke-dasharray: 40 160;
-    }
-
-    .ham8 .middle {
-      stroke-dasharray: 40 142;
-      transform-origin: 50%;
-      transition: transform 400ms;
-    }
-
-    .ham8 .bottom {
-      stroke-dasharray: 40 85;
-      transform-origin: 50%;
-      transition: transform 400ms, stroke-dashoffset 400ms;
-    }
-
-    .ham8.active .top {
-      stroke-dashoffset: -64px;
-    }
-
-    .ham8.active .middle {
-      transform: rotate(90deg);
-    }
-
-    .ham8.active .bottom {
-      stroke-dashoffset: -64px;
-    }
   }
 
   .header__nav {
@@ -750,6 +631,17 @@
       margin: 25px;
     }
   }
+}
+
+@media screen and (max-width: 950px) {
+  .science__contracts {
+    width: 100%;
+
+    &-img {
+      width: 20%;
+      height: 100%;
+    }
+  }
 
   .clients-section__title {
     padding: 40px 0;
@@ -767,10 +659,6 @@
     .post-content__quote {
       padding-right: 150px;
     }
-  }
-
-  .tabs__inner .cases__nav {
-    top: 180px;
   }
 
   .mainpage__wrapper {
@@ -812,10 +700,6 @@
         margin-bottom: 30px;
       }
     }
-  }
-
-  .tabs__inner .technologies__nav {
-    top: 182px;
   }
 }
 
@@ -889,10 +773,6 @@
 }
 
 @media screen and (max-width: 650px) {
-
-  .header__logo {
-    margin: 0 auto;
-  }
 
   .mainpage__content {
     .content__title {
@@ -1035,25 +915,12 @@
     }
   }
 
-  .tabs__inner .cases__burger-menu {
-    font-size: 13px;
-    padding: 19px 70px 17px 15px;
-    height: 50px;
-  }
-
   .presentation__wrapper .presentation__inner .slick-current {
     width: 300px;
   }
 
   .tab__employer .tab__image {
     width: 270px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .tabs__inner .technologies__nav {
-    right: 70px;
-    left: 25px;
   }
 }
 

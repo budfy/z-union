@@ -23,20 +23,46 @@ $(function () {
 
   $('.cases__burger-icon').click(function () {
     $(this).toggleClass('clicked');
+    $('.cases__burger-icon>.ham').toggleClass('active');
+    $('.page__content').toggleClass('page__content--left');
+    $('.page__overlay').addClass('page__overlay--active');
     $('.cases__nav').toggleClass('cases__nav--open');
-    $('.tab__content-item').toggleClass('tab__content-item--left');
+    //$('.tab__content-item').toggleClass('tab__content-item--left');
   });
-
+  
   $('.technologies__burger-icon').click(function () {
     $(this).toggleClass('clicked');
+    $('.technologies__burger-icon>.ham').toggleClass('active');
+    $('.page__content').toggleClass('page__content--left');
+    $('.page__overlay').addClass('page__overlay--active');
     $('.technologies__nav').toggleClass('technologies__nav--open');
-    $('.tab__content-item').toggleClass('tab__content-item--left');
+    //$('.tab__content-item').toggleClass('tab__content-item--left');
   });
-
+  
   $('.tab__link').click(function () {
+    $('.cases__burger-icon').removeClass('clicked');
+    $('.ham').removeClass('active');
+    $('.tab__content-item').removeClass('tab__content-item--left');
+    $('.page__content').removeClass('page__content--left');
+    $('.page__overlay').removeClass('page__overlay--active');
+  });
+  
+  $('.page__content.page__content--left').click(function (){
     $('.cases__burger-icon').removeClass('clicked');
     $('.technologies__burger-icon').removeClass('clicked');
     $('.tab__content-item').removeClass('tab__content-item--left');
+    $('.page__content').removeClass('page__content--left');
+    $('.page__overlay').removeClass('page__overlay--active');
+    $('.ham').removeClass('active');
+  });
+
+  $('.page__overlay').click(function (){
+    $('.cases__burger-icon').removeClass('clicked');
+    $('.technologies__burger-icon').removeClass('clicked');
+    $('.tab__content-item').removeClass('tab__content-item--left');
+    $('.page__content').removeClass('page__content--left');
+    $('.page__overlay').removeClass('page__overlay--active');
+    $('.ham').removeClass('active');
   });
 
   //------------------------------------- popups controlling-----------------------
@@ -44,6 +70,7 @@ $(function () {
   $('.modal__link').click(function () {
     var pop = $(this).attr('data-pop');
     $('#popup-' + pop).addClass('popup--open');
+    $('.popup__overlay').addClass('popup__overlay--open');
     $('body').addClass('scroll-hidden');
   });
 
@@ -71,8 +98,9 @@ $(function () {
     $('body').addClass('scroll-hidden');
   });
 
-  $('.popup__close-btn').click(function () {
-    $('.popup__block').find('.popup--open').removeClass('popup--open')
+  $('.popup__close-btn, .popup__overlay').click(function () {
+    $('.popup__block').find('.popup--open').removeClass('popup--open');
+    $('.popup__overlay').removeClass('popup__overlay--open');
     $('body').removeClass('scroll-hidden');
   });
 

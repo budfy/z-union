@@ -1,8 +1,9 @@
-.technologies__header{
-  .header.header-black{
+.technologies__header {
+  .header.header-black {
     background-color: $bgblack2;
   }
 }
+
 .technologies__main-wrapper {
   background-color: $bgblack2;
   height: calc(100vh - 149px);
@@ -17,6 +18,8 @@
 }
 
 .tab__nav {
+  padding-top: 30px;
+  &-wrapper{
   min-width: 260px;
   padding-right: 19px;
   margin-bottom: auto;
@@ -27,6 +30,7 @@
   background-repeat: repeat-y;
   position: sticky;
   top: 50px;
+  }
 
   .rightside {
     position: absolute;
@@ -36,7 +40,6 @@
     width: 40px;
     background-color: inherit;
     z-index: -1;
-    border-radius: 0 5px 5px 0;
     display: none;
   }
 
@@ -223,7 +226,7 @@
   margin-left: 90px;
   display: flex;
   justify-content: space-between;
-  height: 476px;
+  //height: 476px;
   padding-right: 30px;
   width: calc(100% - 110px);
 
@@ -284,22 +287,24 @@
 .tab__employer {
   position: relative;
   width: 100%;
-  max-width: 470px;
 
   &-content {
     position: absolute;
     left: 0;
     bottom: -2px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151514+0,151514+50,151514+90&0+0,0.5+50,1+90 */
-background: -moz-linear-gradient(top,  rgba(21,21,20,0) 0%, rgba(21,21,20,0.5) 50%, rgba(21,21,20,1) 90%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(21,21,20,0) 0%,rgba(21,21,20,0.5) 50%,rgba(21,21,20,1) 90%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(21,21,20,0) 0%,rgba(21,21,20,0.5) 50%,rgba(21,21,20,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', endColorstr='#151514',GradientType=0 ); /* IE6-9 */
-    width: 100%;
-    max-width: 320px;
+    background: -moz-linear-gradient(top, rgba(21, 21, 20, 0) 0%, rgba(21, 21, 20, 0.5) 50%, rgba(21, 21, 20, 1) 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(21, 21, 20, 0) 0%, rgba(21, 21, 20, 0.5) 50%, rgba(21, 21, 20, 1) 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(21, 21, 20, 0) 0%, rgba(21, 21, 20, 0.5) 50%, rgba(21, 21, 20, 1) 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00151514', endColorstr='#151514', GradientType=0);
+    /* IE6-9 */
+    width: 400%;
     height: 193px;
     outline: none;
   }
@@ -355,6 +360,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
       color: #D68F44;
       margin-bottom: 12px;
       cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &::before {
         content: '';
@@ -458,7 +467,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
 
 .tabs__carousel {
   width: 100%;
-
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
 
   .slick-arrow {
     outline: none;
@@ -507,12 +518,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
   }
 
   .tab-image__positioner {
-    max-width: 260px;
-    transform: scale(1) translateX(0);
-    opacity: .4;
+    //max-width: 260px;
+    transform: scale(1.1) translateX(0);
     transition: all 1s;
     margin-left: -60px;
     transform-origin: bottom;
+    height: 500px;
+    opacity: 0.5;
 
     .tab__employer-data,
     .tab__modal-links {
@@ -522,8 +534,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
   }
 
   .tab-image__positioner.slick-current {
-    transform: scale(0.9) translateX(0);
-    max-width: 260px;
+    transform: scale(1) translateX(0);
     opacity: 1;
     margin-left: 50px;
     z-index: 2;
@@ -546,17 +557,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  //max-width: 668px;
-  //margin: 20px auto;
+  max-width: 668px;
+  margin: 20px auto;
   height: 100%;
-  //max-height: 685px;
+  max-height: 685px;
   background-color: #232323;
   color: #fff;
   display: none;
-  z-index: 3;
+  z-index: 5;
 
   &--open {
     display: block;
+  }
+
+  &__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &--open {
+      display: block;
+    }
   }
 
   &__close-btn {
@@ -612,15 +640,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
       margin-left: 0;
     }
   }
+  &__tabs{
+    height: calc(100vh - 85px);
+  }
 
   &__tab {
-    padding: 43px 41px 79px 54px;
+    padding: 40px;
     display: none;
     font-size: 15px;
     line-height: 120%;
     color: #fff;
     overflow-y: overlay;
-    height: calc(100vh - 150px);
+    height: 100%;
 
     &--open {
       display: block;
@@ -637,4 +668,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151514', e
       margin-bottom: 25px;
     }
   }
+}
+
+.page__content--left{
+  transform: translateX(-300px);
 }
