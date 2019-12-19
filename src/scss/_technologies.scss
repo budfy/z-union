@@ -18,7 +18,7 @@
 }
 
 .tab__nav {
-  padding-top: 30px;
+  padding-top: 10px;
   &-wrapper{
   min-width: 260px;
   padding-right: 19px;
@@ -29,7 +29,7 @@
   background-position: right top;
   background-repeat: repeat-y;
   position: sticky;
-  top: 50px;
+  top: $tab-nav-top;
   }
 
   .rightside {

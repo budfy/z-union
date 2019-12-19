@@ -508,8 +508,8 @@ $(function () {
     };
 
 
-    map = new google.maps.Map(document.getElementById('contacts__map'),
-      mapOptions);
+    // map = new google.maps.Map(document.getElementById('contacts__map'),
+    //   mapOptions);
 
     // Show the default red marker at the location
     marker = new google.maps.Marker({
