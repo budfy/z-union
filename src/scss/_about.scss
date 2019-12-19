@@ -287,7 +287,7 @@
     overflow-y: hidden;
 
     &--show {
-      max-height: unset;
+      max-height: none;
     }
 
     ul li {
@@ -355,7 +355,7 @@
     overflow-y: hidden;
 
     &--show {
-      max-height: unset;
+      max-height: none;
     }
 
     li {

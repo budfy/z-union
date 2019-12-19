@@ -156,7 +156,6 @@ $(function () {
     slidesPerView: 5,
     spaceBetween: 77,
     loop: false,
-    slideToClickedSlide: true,
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
