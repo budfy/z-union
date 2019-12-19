@@ -41,60 +41,9 @@ $(function () {
 
   //------------------------------------- popups controlling-----------------------
 
-  $('.first-popup__link').click(function () {
-    $('#first-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.second-popup__link').click(function () {
-    $('#second-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.third-popup__link').click(function () {
-    $('#third-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.fourth-popup__link').click(function () {
-    $('#fourth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.fifth-popup__link').click(function () {
-    $('#fifth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.sixth-popup__link').click(function () {
-    $('#sixth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.seventh-popup__link').click(function () {
-    $('#seventh-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.eight-popup__link').click(function () {
-    $('#eight-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.nineth-popup__link').click(function () {
-    $('#nineth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.tenth-popup__link').click(function () {
-    $('#tenth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.eleventh-popup__link').click(function () {
-    $('#eleventh-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.tvelveth-popup__link').click(function () {
-    $('#tvelveth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.therteentnth-popup__link').click(function () {
-    $('#therteentnth-popup').addClass('popup--open');
-    $('body').addClass('scroll-hidden');
-  });
-  $('.fourteenth-popup__link').click(function () {
-    $('#fourteenth-popup').addClass('popup--open');
+  $('.modal__link').click(function () {
+    var pop = $(this).attr('data-pop');
+    $('#popup-' + pop).addClass('popup--open');
     $('body').addClass('scroll-hidden');
   });
 

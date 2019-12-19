@@ -14,7 +14,8 @@
 </head>
 
 <body>
-   <nav class="header__nav mobile__nav header__nav-white">
+  <div class="technologies__header">
+  <nav class="header__nav mobile__nav header__nav-white">
   <ul>
     <li><a href="about.html" class="nav__link">О нас</a></li>
     <li><a href="cases.html" class="nav__link">Кейсы</a></li>
@@ -58,8 +59,10 @@
         </div>
   </div>
 </nav>
-      <div class="page__content">
-  <header class="header header-black">
+  </div>
+  <div class="page__content">
+    <div class="technologies__header">
+      <header class="header header-black">
     <div class="container">
       <div class="header__wrapper">
         <div class="header__logo header__logo-black">
@@ -94,41 +97,42 @@
       </div>
     </div>
     </header>
+    </div>
 
 
 
-  <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
-  <main>
-    <div class="technologies__main-wrapper">
-      <div class="container">
-        <div class="tabs__inner">
-          <aside class="tab__nav technologies__nav">
-            <a href="#" class="tab__link tab__link-current" data-id="#tab-id1">Машинное обучение</a>
-            <a href="#" class="tab__link" data-id="#tab-id2">Нейронные сети</a>
-            <a href="#" class="tab__link" data-id="#tab-id3">Автоматизация бизнеса</a>
-            <a href="#" class="tab__link" data-id="#tab-id4">Web разработка</a>
-            <a href="#" class="tab__link" data-id="#tab-id5">Дизайн</a>
-            <a href="#" class="tab__link" data-id="#tab-id6">Мобильная разработка</a>
-            <a href="#" class="tab__link" data-id="#tab-id7">Голосовые Боты</a>
-            <a href="#" class="tab__link" data-id="#tab-id8">Чат Боты</a>
-            <a href="#" class="tab__link" data-id="#tab-id9">Лидогенерация</a>
-            <a href="#" class="tab__link" data-id="#tab-id10">Маркетинг</a>
-            <a href="#" class="tab__link" data-id="#tab-id11">Hardware</a>
-            <a href="#" class="tab__link" data-id="#tab-id12">Трейдинг</a>
-            <div class="animation"></div>
-            <div class="rightside"></div>
-          </aside>
+    <!-- -------------------------------------- WRITE CODE HERE -------------------------------------- -->
+    <main>
+      <div class="technologies__main-wrapper">
+        <div class="container">
+          <div class="tabs__inner">
+            <aside class="tab__nav technologies__nav">
+              <a href="#" class="tab__link tab__link-current" data-id="#tab-id1">Машинное обучение</a>
+              <a href="#" class="tab__link" data-id="#tab-id2">Нейронные сети</a>
+              <a href="#" class="tab__link" data-id="#tab-id3">Автоматизация бизнеса</a>
+              <a href="#" class="tab__link" data-id="#tab-id4">Web разработка</a>
+              <a href="#" class="tab__link" data-id="#tab-id5">Дизайн</a>
+              <a href="#" class="tab__link" data-id="#tab-id6">Мобильная разработка</a>
+              <a href="#" class="tab__link" data-id="#tab-id7">Голосовые Боты</a>
+              <a href="#" class="tab__link" data-id="#tab-id8">Чат Боты</a>
+              <a href="#" class="tab__link" data-id="#tab-id9">Лидогенерация</a>
+              <a href="#" class="tab__link" data-id="#tab-id10">Маркетинг</a>
+              <a href="#" class="tab__link" data-id="#tab-id11">Hardware</a>
+              <a href="#" class="tab__link" data-id="#tab-id12">Трейдинг</a>
+              <div class="animation"></div>
+              <div class="rightside"></div>
+            </aside>
 
-          <section class="tab__content">
-            <div class="tabs__nav-button">
-              <span>Наши технологии</span>
-              <div class="technologies__burger-icon">
-                <div class="burger-icon__item"></div>
+            <section class="tab__content">
+              <div class="tabs__nav-button">
+                <span>Наши технологии</span>
+                <div class="technologies__burger-icon">
+                  <div class="burger-icon__item"></div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item current-tab" id="tab-id1">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item current-tab" id="tab-id1">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -152,19 +156,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-          <a href="#first-popup" class="modal__link first-popup__link edu__link">Обазование</a>
-          <a href="#first-popup" class="modal__link first-popup__link exp__link">Опыт</a>
-          <a href="#first-popup" class="modal__link first-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="1" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="1" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="1" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id2">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id2">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -188,11 +192,11 @@
           <span class="employer__position">Генеральный директор</span>
         </div>
         <div class="tab__modal-links">
-            <div class="employer__links">
-                <a href="#second-popup" class="modal__link second-popup__link edu__link">Обазование</a>
-                <a href="#second-popup" class="modal__link second-popup__link exp__link">Опыт</a>
-                <a href="#second-popup" class="modal__link second-popup__link skill__link">Навыки</a>
-              </div>
+          <div class="employer__links">
+            <a href="#first-popup" data-pop="2" class="modal__link edu__link">Обазование</a>
+            <a href="#first-popup" data-pop="2" class="modal__link exp__link">Опыт</a>
+            <a href="#first-popup" data-pop="2" class="modal__link skill__link">Навыки</a>
+          </div>
         </div>
       </div>
     </div>
@@ -208,11 +212,9 @@
           </div>
           <div class="tab__modal-links">
             <div class="employer__links">
-                
-                    <a href="#third-popup" class="modal__link third-popup__link edu__link">Обазование</a>
-                    <a href="#third-popup" class="modal__link third-popup__link exp__link">Опыт</a>
-                    <a href="#third-popup" class="modal__link third-popup__link skill__link">Навыки</a>
-                  
+              <a href="#first-popup" data-pop="3" class="modal__link edu__link">Обазование</a>
+              <a href="#first-popup" data-pop="3" class="modal__link exp__link">Опыт</a>
+              <a href="#first-popup" data-pop="3" class="modal__link skill__link">Навыки</a>
             </div>
           </div>
         </div>
@@ -229,11 +231,9 @@
             </div>
             <div class="tab__modal-links">
               <div class="employer__links">
-                  
-                      <a href="#fourth-popup" class="modal__link fourth-popup__link edu__link">Обазование</a>
-                      <a href="#fourth-popup" class="modal__link fourth-popup__link exp__link">Опыт</a>
-                      <a href="#fourth-popup" class="modal__link fourth-popup__link skill__link">Навыки</a>
-                    
+                <a href="#first-popup" data-pop="4" class="modal__link edu__link">Обазование</a>
+                <a href="#first-popup" data-pop="4" class="modal__link exp__link">Опыт</a>
+                <a href="#first-popup" data-pop="4" class="modal__link skill__link">Навыки</a>
               </div>
             </div>
           </div>
@@ -241,11 +241,11 @@
 
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id3">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id3">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -269,21 +269,20 @@
         <span class="employer__position">Руководитель отдела по трафику</span>
       </div>
       <div class="tab__modal-links">
-                    <div class="employer__links">
-                <a href="#fifth-popup" class="modal__link fifth-popup__link edu__link">Обазование</a>
-                <a href="#fifth-popup" class="modal__link fifth-popup__link exp__link">Опыт</a>
-                <a href="#fifth-popup" class="modal__link fifth-popup__link skill__link">Навыки</a>
-              
+        <div class="employer__links">
+          <a href="#first-popup" data-pop="5" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="5" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="5" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id4">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id4">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -306,19 +305,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#sixth-popup" class="modal__link sixth-popup__link edu__link">Обазование</a>
-            <a href="#sixth-popup" class="modal__link sixth-popup__link exp__link">Опыт</a>
-            <a href="#sixth-popup" class="modal__link sixth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="6" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="6" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="6" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id5">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id5">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -343,19 +342,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#seventh-popup" class="modal__link seventh-popup__link edu__link">Обазование</a>
-            <a href="#seventh-popup" class="modal__link seventh-popup__link exp__link">Опыт</a>
-            <a href="#seventh-popup" class="modal__link seventh-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="7" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="7" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="7" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id6">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id6">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -378,19 +377,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#eight-popup" class="modal__link eight-popup__link edu__link">Обазование</a>
-            <a href="#eight-popup" class="modal__link eight-popup__link exp__link">Опыт</a>
-            <a href="#eight-popup" class="modal__link eight-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="8" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="8" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="8" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id7">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id7">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -415,19 +414,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#nineth-popup" class="modal__link nineth-popup__link edu__link">Обазование</a>
-            <a href="#nineth-popup" class="modal__link nineth-popup__link exp__link">Опыт</a>
-            <a href="#nineth-popup" class="modal__link nineth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="9" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="9" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="9" class="modal__link skill__link">Навыки</a>>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id8">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id8">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -450,19 +449,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#tenth-popup" class="modal__link tenth-popup__link edu__link">Обазование</a>
-            <a href="#tenth-popup" class="modal__link tenth-popup__link exp__link">Опыт</a>
-            <a href="#tenth-popup" class="modal__link tenth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="10" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="10" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="10" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id9">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id9">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -485,19 +484,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#eleventh-popup" class="modal__link eleventh-popup__link edu__link">Обазование</a>
-            <a href="#eleventh-popup" class="modal__link eleventh-popup__link exp__link">Опыт</a>
-            <a href="#eleventh-popup" class="modal__link eleventh-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="11" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="11" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="11" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id10">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id10">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -520,19 +519,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#tvelveth-popup" class="modal__link tvelveth-popup__link edu__link">Обазование</a>
-            <a href="#tvelveth-popup" class="modal__link tvelveth-popup__link exp__link">Опыт</a>
-            <a href="#tvelveth-popup" class="modal__link tvelveth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="12" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="12" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="12" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id11">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id11">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -555,19 +554,19 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#therteentnth-popup" class="modal__link therteentnth-popup__link edu__link">Обазование</a>
-            <a href="#therteentnth-popup" class="modal__link therteentnth-popup__link exp__link">Опыт</a>
-            <a href="#therteentnth-popup" class="modal__link therteentnth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="13" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="13" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="13" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="tab__content-item" id="tab-id12">
-              <div class="tab__inner">
-                <div class="tab__text-wrapper">
+              <div class="tab__content-item" id="tab-id12">
+                <div class="tab__inner">
+                  <div class="tab__text-wrapper">
   <div class="tab__subtitle">
     НАШИ ТЕХНОЛОГИИ
   </div>
@@ -590,22 +589,22 @@
       </div>
       <div class="tab__modal-links">
         <div class="employer__links">
-            <a href="#fourteenth-popup" class="modal__link fourteenth-popup__link edu__link">Обазование</a>
-            <a href="#fourteenth-popup" class="modal__link fourteenth-popup__link exp__link">Опыт</a>
-            <a href="#fourteenth-popup" class="modal__link fourteenth-popup__link skill__link">Навыки</a>
+          <a href="#first-popup" data-pop="14" class="modal__link edu__link">Обазование</a>
+          <a href="#first-popup" data-pop="14" class="modal__link exp__link">Опыт</a>
+          <a href="#first-popup" data-pop="14" class="modal__link skill__link">Навыки</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="popup__block">
-        <div id="first-popup" class="popup">
+      <div class="popup__block">
+        <div id="popup-1" class="popup">
 
   <div class="popup__tab-menu">
     <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -700,7 +699,7 @@
     </div>
   </div>
 </div>
-        <div id="second-popup" class="popup">
+        <div id="popup-2" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -795,7 +794,7 @@
       </div>
     </div>
   </div>
-        <div id="third-popup" class="popup">
+        <div id="popup-3" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -890,7 +889,7 @@
       </div>
     </div>
   </div>
-        <div id="fourth-popup" class="popup">
+        <div id="popup-4" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -985,7 +984,7 @@
       </div>
     </div>
   </div>
-        <div id="fifth-popup" class="popup">
+        <div id="popup-5" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1080,7 +1079,7 @@
       </div>
     </div>
   </div>
-        <div id="sixth-popup" class="popup">
+        <div id="popup-6" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1175,7 +1174,7 @@
       </div>
     </div>
   </div>
-        <div id="seventh-popup" class="popup">
+        <div id="popup-7" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1270,7 +1269,7 @@
       </div>
     </div>
   </div>
-        <div id="eight-popup" class="popup">
+        <div id="popup-8" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1365,7 +1364,7 @@
       </div>
     </div>
   </div>
-        <div id="nineth-popup" class="popup">
+        <div id="popup-9" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1460,7 +1459,7 @@
       </div>
     </div>
   </div>
-        <div id="tenth-popup" class="popup">
+        <div id="popup-10" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1555,7 +1554,7 @@
       </div>
     </div>
   </div>
-        <div id="eleventh-popup" class="popup">
+        <div id="popup-11" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1650,7 +1649,7 @@
       </div>
     </div>
   </div>
-        <div id="tvelveth-popup" class="popup">
+        <div id="popup-12" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1745,7 +1744,7 @@
       </div>
     </div>
   </div>
-        <div id="therteentnth-popup" class="popup">
+        <div id="popup-13" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1840,7 +1839,7 @@
       </div>
     </div>
   </div>
-        <div id="fourteenth-popup" class="popup">
+        <div id="popup-14" class="popup">
 
     <div class="popup__tab-menu">
       <a href="#popup" class="popup__tab-link popup__tab-link--open popup__edu-link">Образование</a>
@@ -1935,17 +1934,17 @@
       </div>
     </div>
   </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
+    <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
 
 
 
-  <script src="js/libs.min.js"></script>
+    <script src="js/libs.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.min.js"></script>
-      </div>
+  </div>
 </body>
 
 </html>

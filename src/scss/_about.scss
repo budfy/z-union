@@ -125,6 +125,7 @@
 }
 
 .science {
+  min-height: unset;
   &__container {
     margin-left: 414px;
     overflow: hidden;
@@ -413,7 +414,7 @@
   &__title {
     font-size: 150px;
     line-height: 110%;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -450,7 +451,7 @@
       display: inline-block;
       margin: 0;
       padding: 0;
-      transition: all .5s;
+      transition: all .3s;
       transform-origin: bottom;
       margin: 0 -3.7%;
       object-fit: contain;
@@ -479,7 +480,7 @@
       transform: scale(1.3);
     }
 
-    .team_img--small {
+    .team__img--small {
       transform: scale(1.15);
     }
   }
@@ -542,7 +543,8 @@
   background-repeat: no-repeat;
 
   &__container {
-    padding: 156px 0 135px 350px;
+    padding: 156px 0 135px 0;
+    margin-left: 351px;
   }
 
   &__title {
