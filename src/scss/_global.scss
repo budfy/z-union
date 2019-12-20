@@ -67,7 +67,10 @@ input {
 
   &-toggle {
     transform: translateX(-100%);
-    overflow-x: auto;
+  }
+  
+  &--left{
+    transform: translateX(-300px);
   }
   .page__overlay{
     position: absolute;
@@ -80,6 +83,10 @@ input {
       display: block;
     }
   }
+}
+main{
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 .scroll-hidden{
   overflow: hidden;

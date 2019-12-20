@@ -4,7 +4,6 @@
 }
 
 .contacts__wrapper {
-  height: 533px;
   width: 100%;
   position: relative;
   padding: 64px;
@@ -17,8 +16,9 @@
     bottom: -64px;
     left: 0;
     z-index: 0;
-    .contacts__maps-background{
-height: 100%;
+
+    .contacts__maps-background {
+      height: 100%;
     }
   }
 
@@ -67,6 +67,7 @@ height: 100%;
       color: $orange2;
       font-size: 15px;
       display: block;
+      margin-bottom: 25px;
     }
 
     .contacts__phone {
@@ -127,7 +128,8 @@ height: 100%;
           }
         }
 
-        &:focus-within, &.wrapper-filled {
+        &:focus-within,
+        &.wrapper-filled {
           .input__title {
             font-size: 13px;
             color: #bbb;
@@ -144,4 +146,16 @@ height: 100%;
       }
     }
   }
+}
+
+.contact__btn {
+  padding: 19px 46px 14px;
+  background-color: #D68F44;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 110%;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  margin-top: 15px;
 }
