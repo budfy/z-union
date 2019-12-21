@@ -26,6 +26,10 @@
     max-width: 100vw;
     margin-left: 0;
   }
+
+  .tab__employer {
+    width: 43%;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -77,12 +81,11 @@
       .tab__employer {
         margin: 0 auto;
         margin-bottom: 50px;
-        padding-right: 30px;
       }
 
       .tab__employer {
         margin-top: 50px;
-
+        width: 80%;
       }
 
       .tab__text-wrapper {
@@ -286,6 +289,8 @@
     }
   }
 
+
+
   .technologies__main-wrapper {
     .tabs__nav-button {
       display: flex;
@@ -376,6 +381,10 @@
     .tab__inner {
       margin-left: 0;
       padding-left: 30px;
+
+      .tab__employer {
+        width: 100%;
+      }
 
       .tab__subtitle {
         display: none;

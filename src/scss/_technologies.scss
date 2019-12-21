@@ -189,7 +189,7 @@
 }
 
 .tab__content {
-  width: calc(100% - 110px);
+  width: calc(100% - 260px);
 
   .tabs__nav-button {
     display: none;
@@ -228,7 +228,7 @@
   justify-content: space-between;
   //height: 476px;
   padding-right: 30px;
-  width: calc(100% - 110px);
+  width: calc(100% - 60px);
 
   .tab__text-wrapper {
     padding-left: 60px;
@@ -286,7 +286,7 @@
 
 .tab__employer {
   position: relative;
-  width: 100%;
+  width: 55%;
 
   &-content {
     position: absolute;
@@ -484,7 +484,7 @@
     z-index: 3;
 
     &.slick-disabled {
-      display: none;
+      display: none !important;
     }
 
     &::before {
@@ -504,7 +504,7 @@
   }
 
   .slick-next {
-    right: 0px;
+    right: 10px;
 
     &::before {
       transform: rotate(180deg);
@@ -518,7 +518,6 @@
   }
 
   .tab-image__positioner {
-    //max-width: 260px;
     transform: scale(1.1) translateX(0);
     transition: all 1s;
     margin-left: -60px;
@@ -530,6 +529,7 @@
     .tab__modal-links {
       opacity: 0;
       transition: all 1.2s;
+      padding-bottom: 10px;
     }
   }
 
