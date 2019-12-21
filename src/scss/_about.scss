@@ -15,12 +15,12 @@
   width: 100%;
   z-index: 50;
   background-color: white;
-  transform: translateY(200%);
-  height: 92px;
+  transform: translateY(-100%);
   transform-origin: top;
   transition: all .7s;
   opacity: 0;
-  height: 0;
+  //height: 0;
+  height: fit-content;
 
   .header__wrapper {
     padding: 25px 38px 25px 58px;
@@ -30,17 +30,18 @@
   &.scrolled {
     transform: translateY(0);
     opacity: 1;
-    height: fit-content;
   }
 }
 
+.particles-wrapper {
+  height: calc(100vh - 149px);
+  position: relative;
+}
+
 .topscreen {
-  background-color: #3a3a39;
-  background-image: url(../img/main_bg-black.png);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: calc(100vh - 152px);
+  background-color: #232322;
+
+
 
   &__content {
     max-width: 575px;
@@ -126,6 +127,7 @@
 
 .science {
   min-height: unset;
+
   &__container {
     margin-left: 414px;
     overflow: hidden;
@@ -485,7 +487,8 @@
       transform: scale(1.15);
     }
   }
-  &__hover-zone{
+
+  &__hover-zone {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -494,7 +497,8 @@
     justify-content: space-between;
     z-index: 4;
     cursor: pointer;
-    .team__hover-block{
+
+    .team__hover-block {
       height: 100%;
       width: 10%;
     }
@@ -537,14 +541,10 @@
 }
 
 .social {
-  background-color: #3a3a39;
-  background-image: url(../img/main_bg-black.png);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  background-color: #232322;
 
   &__container {
-    padding: 156px 0 135px 0;
+    padding-top: 100px;
     margin-left: 351px;
   }
 

@@ -65,8 +65,7 @@
   <main>
     <div class="page__content">
       <section class="topscreen slide-section">
-        <div class="container">
-          <header class="header header-black">
+        <header class="header header-black">
     <div class="container">
       <div class="header__wrapper">
         <div class="header__logo header__logo-black">
@@ -101,12 +100,18 @@
       </div>
     </div>
     </header>
-          <div class="topscreen__content wow fadeInDown" data-wow-delay="0.3s">
-            <h2 class="topscreen__content-title">Мы — альянс <br> высоко технологичных предприятий.</h2>
-            <p class="topscreen__content-text">Распознавание изображений, разработка прогностических моделей, мобильных
-              приложений, вэб-проектов, дополненная и виртуальная реальность, ИИ-ассистенты, умный маркетинг</p>
+        <div class="particles-wrapper">
+          <div id="particles-white"></div>
+          <div class="container">
+            <div class="topscreen__content wow fadeInDown" data-wow-delay="0.3s">
+              <h2 class="topscreen__content-title">Мы — альянс <br> высоко технологичных предприятий.</h2>
+              <p class="topscreen__content-text">Распознавание изображений, разработка прогностических моделей,
+                мобильных
+                приложений, вэб-проектов, дополненная и виртуальная реальность, ИИ-ассистенты, умный маркетинг</p>
+            </div>
           </div>
         </div>
+
       </section>
 
       <div class="sticky-menu__wrapper">
@@ -189,13 +194,20 @@
               </p>
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="1" src="img/content/science-logo-1.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="2" src="img/content/science-logo-2.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="3" src="img/content/science-logo-3.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="4" src="img/content/science-logo-4.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="5" src="img/content/science-logo-5.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="6" src="img/content/science-logo-1.png" alt=""></div>
-                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="7" src="img/content/science-logo-2.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="1"
+                      src="img/content/science-logo-1.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="2"
+                      src="img/content/science-logo-2.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="3"
+                      src="img/content/science-logo-3.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="4"
+                      src="img/content/science-logo-4.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="5"
+                      src="img/content/science-logo-5.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="6"
+                      src="img/content/science-logo-1.png" alt=""></div>
+                  <div class="swiper-slide science__slide"><img class="science__tab-button" data-id="7"
+                      src="img/content/science-logo-2.png" alt=""></div>
                 </div>
                 <div class="swiper-scrollbar">
                   <div class="swiper-scrollbar-drag"></div>
@@ -467,20 +479,24 @@
       </div>
     </div>
     </header>
-        <div class="container">
-          <div class="social__container">
-            <h3 class="section__title social__title">Мы в социальных сетях</h3>
-            <ul class="social__list wow slideInDown">
-              <li>
-                <a class='social__list-item icon-vk' href="#">Вконтакте</a>
-              </li>
-              <li>
-                <a class='social__list-item icon-youtube-play' href="#">YouTube</a>
-              </li>
-              <li>
-                <a class='social__list-item icon-instagram' href="#">Instagram</a>
-              </li>
-            </ul>
+        <div class="particles-wrapper">
+          <div id="particles-white-soc">
+          </div>
+          <div class="container">
+            <div class="social__container">
+              <h3 class="section__title social__title">Мы в социальных сетях</h3>
+              <ul class="social__list wow slideInDown">
+                <li>
+                  <a class='social__list-item icon-vk' href="#">Вконтакте</a>
+                </li>
+                <li>
+                  <a class='social__list-item icon-youtube-play' href="#">YouTube</a>
+                </li>
+                <li>
+                  <a class='social__list-item icon-instagram' href="#">Instagram</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -488,22 +504,274 @@
   <!-- -------------------------------------- STOP WRITE CODE -------------------------------------- -->
   <script src="js/libs.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/main.min.js"></script>
   <script>
     $(function () {
       $(window).scroll(function () {
         var url = window.location.hash;
-        if ($(this).scrollTop() >= window.innerHeight * 0.8) {
+        if ($(this).scrollTop() >= window.innerHeight * 0.9) {
           $('.top__menu').addClass('scrolled');
-          $('.header-black').hide();
-          $('.header').show();
         } else {
           $('.top__menu').removeClass('scrolled');
-          $('.header-black').show();
-          $('.header:not(.header-black)').hide();
         }
       });
     });
+
+    $(function () {
+      $(window).scroll(function () {
+        var url = window.location.hash;
+        if ($(this).scrollTop() < window.innerHeight * 1) {
+          $('body').css('background-color', ' #ebf0fa');
+        } else {
+          $('body').css('background-color', 'white');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    particlesJS("particles-white", {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "bounce",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    particlesJS("particles-white-soc", {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "bounce",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+
+    /* ---- stats.js config ---- */
+
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
   </script>
 </body>
 
