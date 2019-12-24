@@ -154,8 +154,9 @@ $(function () {
 
   var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 5,
-    spaceBetween: 77,
-    loop: false,
+    spaceBetween: 25,
+    loop: true,
+    slideToClickedSlide: true,
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,

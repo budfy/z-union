@@ -7,11 +7,16 @@
     "Slidebars": "^2.0.0",
     "body-scroll-lock": "^2.6.4",
     "isotope-layout": "^3.0.6",
-    "onepage-scroll-jquery": "^1.0.0"
+    "onepage-scroll-jquery": "^1.0.0",
+    "animate.css": "^3.7.2",
+    "jquery-scrollify-vilcheuski": "^1.0.21",
+    "magnific-popup": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "animsition": "^4.0.2",
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
   },
   "devDependencies": {
-    "animate.css": "^3.7.2",
-    "animsition": "^4.0.2",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -32,12 +37,7 @@
     "gulp-watch": "^5.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "jquery": "^3.4.1",
-    "jquery-scrollify-vilcheuski": "^1.0.21",
-    "magnific-popup": "^1.1.0",
-    "normalize.css": "^8.0.1",
-    "sass": "^1.23.0",
-    "slick-carousel": "^1.8.1",
-    "wowjs": "^1.1.3"
+    "sass": "^1.23.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

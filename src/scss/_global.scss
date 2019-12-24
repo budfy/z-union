@@ -9,6 +9,10 @@ body {
   box-sizing: inherit;
 }
 
+*:focus{
+  outline: 1px solid $orange;
+}
+
 html {
   height: 100%;
   position: relative;
@@ -69,6 +73,7 @@ input {
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
+  border: none;
 }
 
 .page__content {
