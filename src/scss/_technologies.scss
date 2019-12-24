@@ -225,8 +225,7 @@
 .tab__inner {
   margin-left: 90px;
   display: flex;
-  justify-content: space-between;
-  //height: 476px;
+  justify-content: flex-start;
   padding-right: 30px;
   width: calc(100% - 60px);
 
@@ -286,7 +285,12 @@
 
 .tab__employer {
   position: relative;
+<<<<<<< HEAD
   width: 55%;
+=======
+  //width: 100%;
+  margin-left: auto;
+>>>>>>> 0d17c0f1103659725aa826400449410d0c0a45c9
 
   &-content {
     position: absolute;
@@ -515,6 +519,10 @@
     left: 0;
 
     &::before {}
+  }
+
+  .slick-disabled{
+    display: none !important;
   }
 
   .tab-image__positioner {
